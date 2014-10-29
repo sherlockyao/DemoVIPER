@@ -25,6 +25,7 @@
 		162F291419FDF4DA0043C638 /* BasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F291319FDF4DA0043C638 /* BasePresenter.m */; };
 		162F291719FDF6890043C638 /* InitializationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F291619FDF6890043C638 /* InitializationPresenter.m */; };
 		164DD3EC1A009465005DD629 /* SiriInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 164DD3EB1A009465005DD629 /* SiriInteractor.m */; };
+		164DD3EF1A00971F005DD629 /* CommunicatePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 164DD3EE1A00971F005DD629 /* CommunicatePresenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,9 @@
 		162F291919FDF70E0043C638 /* ProgressViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressViewInterface.h; sourceTree = "<group>"; };
 		164DD3EA1A009465005DD629 /* SiriInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriInteractor.h; sourceTree = "<group>"; };
 		164DD3EB1A009465005DD629 /* SiriInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriInteractor.m; sourceTree = "<group>"; };
+		164DD3ED1A00971F005DD629 /* CommunicatePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicatePresenter.h; sourceTree = "<group>"; };
+		164DD3EE1A00971F005DD629 /* CommunicatePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicatePresenter.m; sourceTree = "<group>"; };
+		164DD3F01A00975E005DD629 /* MessageBoardViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageBoardViewInterface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				162F291919FDF70E0043C638 /* ProgressViewInterface.h */,
+				164DD3F01A00975E005DD629 /* MessageBoardViewInterface.h */,
 			);
 			name = "View Interfaces";
 			sourceTree = "<group>";
@@ -224,6 +229,8 @@
 				162F291119FDF4B90043C638 /* Base */,
 				162F291519FDF6890043C638 /* InitializationPresenter.h */,
 				162F291619FDF6890043C638 /* InitializationPresenter.m */,
+				164DD3ED1A00971F005DD629 /* CommunicatePresenter.h */,
+				164DD3EE1A00971F005DD629 /* CommunicatePresenter.m */,
 			);
 			name = Presenters;
 			sourceTree = "<group>";
@@ -378,6 +385,7 @@
 				162F290019FDE4720043C638 /* PageMessenger.m in Sources */,
 				162F290A19FDEA160043C638 /* NSString+Utility.m in Sources */,
 				162F28FD19FDE3FD0043C638 /* SplashViewController.m in Sources */,
+				164DD3EF1A00971F005DD629 /* CommunicatePresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

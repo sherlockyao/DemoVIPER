@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
-#import "ProgressViewInterface.h"
+#import "CommunicatePresenter.h"
 
-@interface HomeViewController : BaseViewController<ProgressViewInterface>
+@interface HomeViewController : BaseViewController<ProgressViewInterface, MessageBoardViewInterface>
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UIButton *button;
+
+@property (nonatomic, strong) CommunicatePresenter *communicatePresenter;
 
 @end
 

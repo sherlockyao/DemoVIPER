@@ -10,7 +10,6 @@
 #import "UIStoryboard+Demo.h"
 #import "SplashViewController.h"
 #import "HomeViewController.h"
-#import "InitializationPresenter.h"
 
 static NSString *const SplashViewIdentifier = @"SplashViewController";
 static NSString *const HomeViewIdentifier = @"HomeViewController";
@@ -31,6 +30,17 @@ static NSString *const HomeViewIdentifier = @"HomeViewController";
 
 + (UIViewController *)assembleHomeViewWithParams:(NSDictionary *)params {
   HomeViewController *viewController = [[UIStoryboard mainStoryboard] instantiateViewControllerWithIdentifier:HomeViewIdentifier];
+  CommunicatePresenter *communicatePresenter = [CommunicatePresenter new];
+  SiriInteractor *siriInteractor = [SiriInteractor new];
+  
+  // wire up
+  viewController.communicatePresenter = communicatePresenter;
+  communicatePresenter.progressView = viewController;
+  communicatePresenter.messageBoard = viewController;
+  communicatePresenter.mainViewController = viewController;
+  communicatePresenter.siriInteractor = siriInteractor;
+  siriInteractor.delegate = communicatePresenter;
+  
   return viewController;
 }
 
