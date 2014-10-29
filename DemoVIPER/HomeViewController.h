@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "ProgressViewInterface.h"
 
-@interface HomeViewController : BaseViewController
+@interface HomeViewController : BaseViewController<ProgressViewInterface>
 
-
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
 

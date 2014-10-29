@@ -10,6 +10,7 @@
 #import "UIStoryboard+Demo.h"
 #import "SplashViewController.h"
 #import "HomeViewController.h"
+#import "InitializationPresenter.h"
 
 static NSString *const SplashViewIdentifier = @"SplashViewController";
 static NSString *const HomeViewIdentifier = @"HomeViewController";
@@ -18,6 +19,13 @@ static NSString *const HomeViewIdentifier = @"HomeViewController";
 
 + (UIViewController *)assembleSplashView {
   SplashViewController *viewController = [[UIStoryboard mainStoryboard] instantiateViewControllerWithIdentifier:SplashViewIdentifier];
+  InitializationPresenter *initializationPresenter = [InitializationPresenter new];
+  
+  // wire up
+  viewController.initializationPresenter = initializationPresenter;
+  initializationPresenter.progressView = viewController;
+  initializationPresenter.mainViewController = viewController;
+  
   return viewController;
 }
 

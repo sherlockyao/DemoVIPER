@@ -7,7 +7,10 @@
 //
 
 #import "BasePresenter.h"
+#import "ProgressViewInterface.h"
 
 @interface InitializationPresenter : BasePresenter
+
+@property (nonatomic, weak) id<ProgressViewInterface> progressView;
 
 @end

@@ -24,6 +24,7 @@
 		162F291019FDF2570043C638 /* UIViewController+Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F290F19FDF2570043C638 /* UIViewController+Demo.m */; };
 		162F291419FDF4DA0043C638 /* BasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F291319FDF4DA0043C638 /* BasePresenter.m */; };
 		162F291719FDF6890043C638 /* InitializationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F291619FDF6890043C638 /* InitializationPresenter.m */; };
+		164DD3EC1A009465005DD629 /* SiriInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 164DD3EB1A009465005DD629 /* SiriInteractor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		162F291519FDF6890043C638 /* InitializationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitializationPresenter.h; sourceTree = "<group>"; };
 		162F291619FDF6890043C638 /* InitializationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitializationPresenter.m; sourceTree = "<group>"; };
 		162F291919FDF70E0043C638 /* ProgressViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressViewInterface.h; sourceTree = "<group>"; };
+		164DD3EA1A009465005DD629 /* SiriInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriInteractor.h; sourceTree = "<group>"; };
+		164DD3EB1A009465005DD629 /* SiriInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriInteractor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +231,8 @@
 		162F28F319FDDE990043C638 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				164DD3EA1A009465005DD629 /* SiriInteractor.h */,
+				164DD3EB1A009465005DD629 /* SiriInteractor.m */,
 			);
 			name = Interactors;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				162F28F619FDDFB30043C638 /* Wireframe.m in Sources */,
 				162F28FA19FDE3190043C638 /* BaseViewController.m in Sources */,
 				162F28CF19FDDD780043C638 /* HomeViewController.m in Sources */,
+				164DD3EC1A009465005DD629 /* SiriInteractor.m in Sources */,
 				162F291019FDF2570043C638 /* UIViewController+Demo.m in Sources */,
 				162F290319FDE4EC0043C638 /* AssemblingFactory.m in Sources */,
 				162F291419FDF4DA0043C638 /* BasePresenter.m in Sources */,
@@ -562,6 +568,7 @@
 				162F28E819FDDD780043C638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		162F28E919FDDD780043C638 /* Build configuration list for PBXNativeTarget "DemoVIPERTests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +577,7 @@
 				162F28EB19FDDD780043C638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
