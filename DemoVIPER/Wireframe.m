@@ -12,6 +12,11 @@
 #import "UIViewController+Demo.h"
 #import "SplashViewController.h"
 
+/**
+ * Wireframe handles all the navigation between controllers, and passing parameters.
+ *
+ * Assembling Factory takes care of loading controllers/presenters/interactors, and wire them up.
+ */
 @implementation Wireframe
 
 + (UIViewController *)entryPoint {
