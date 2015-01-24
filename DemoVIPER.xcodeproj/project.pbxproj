@@ -26,6 +26,8 @@
 		162F291719FDF6890043C638 /* InitializationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F291619FDF6890043C638 /* InitializationPresenter.m */; };
 		164DD3EC1A009465005DD629 /* SiriInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 164DD3EB1A009465005DD629 /* SiriInteractor.m */; };
 		164DD3EF1A00971F005DD629 /* CommunicatePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 164DD3EE1A00971F005DD629 /* CommunicatePresenter.m */; };
+		16EECE9C1A737C5200CC90A4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 16EECE9B1A737C5200CC90A4 /* README.md */; };
+		16EECE9F1A73884600CC90A4 /* RoutingSequence.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE9E1A73884600CC90A4 /* RoutingSequence.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		164DD3ED1A00971F005DD629 /* CommunicatePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicatePresenter.h; sourceTree = "<group>"; };
 		164DD3EE1A00971F005DD629 /* CommunicatePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicatePresenter.m; sourceTree = "<group>"; };
 		164DD3F01A00975E005DD629 /* MessageBoardViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageBoardViewInterface.h; sourceTree = "<group>"; };
+		16EECE9B1A737C5200CC90A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		16EECE9E1A73884600CC90A4 /* RoutingSequence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RoutingSequence.png; path = Documents/RoutingSequence.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		162F28BA19FDDD780043C638 = {
 			isa = PBXGroup;
 			children = (
+				16EECE9B1A737C5200CC90A4 /* README.md */,
+				16EECE9D1A73800600CC90A4 /* Documents */,
 				162F28C519FDDD780043C638 /* DemoVIPER */,
 				162F28DF19FDDD780043C638 /* DemoVIPERTests */,
 				162F28C419FDDD780043C638 /* Products */,
@@ -271,6 +277,14 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		16EECE9D1A73800600CC90A4 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				16EECE9E1A73884600CC90A4 /* RoutingSequence.png */,
+			);
+			name = Documents;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -354,6 +368,7 @@
 				162F28D219FDDD780043C638 /* Main.storyboard in Resources */,
 				162F28D719FDDD780043C638 /* LaunchScreen.xib in Resources */,
 				162F28D419FDDD780043C638 /* Images.xcassets in Resources */,
+				16EECE9F1A73884600CC90A4 /* RoutingSequence.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +392,7 @@
 				164DD3EC1A009465005DD629 /* SiriInteractor.m in Sources */,
 				162F291019FDF2570043C638 /* UIViewController+Demo.m in Sources */,
 				162F290319FDE4EC0043C638 /* AssemblingFactory.m in Sources */,
+				16EECE9C1A737C5200CC90A4 /* README.md in Sources */,
 				162F291419FDF4DA0043C638 /* BasePresenter.m in Sources */,
 				162F290619FDE5880043C638 /* UIStoryboard+Demo.m in Sources */,
 				162F291719FDF6890043C638 /* InitializationPresenter.m in Sources */,
