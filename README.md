@@ -12,7 +12,8 @@ It takes care all the navigation logic in the application, we describe which scr
 Also, it takes the responsibility of creating all the view controllers, presenters and interactors, and wire them up.
 It is like playing a glue role in the application, putting every picecs together so others should only need to worry about their own jobs.
 
-Check the Documents/RoutingSequence.png file for a sequence diagram of Routing, then you can get an overview of it and know how it works.
+Here is a sequence diagram of Routing which will help you to get an overview of it and know how it works:
+![Routing Sequence](Documents/RoutingSequence.png)
 
 
 ## View
