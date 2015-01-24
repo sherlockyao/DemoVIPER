@@ -33,12 +33,20 @@
 #pragma mark - Navigation Methods
 
 + (void)moveToHomeViewController:(UIViewController *)viewController params:(NSDictionary *)params {
-  UIViewController *homeViewController = [AssemblingFactory assembleHomeViewWithParams:params];
+  BaseViewController *homeViewController = [AssemblingFactory assembleHomeView];
+  homeViewController.params = params;
   [viewController presentViewController:homeViewController animated:NO completion:nil];
 }
 
 #pragma mark - Private Methods
 
+/**
+ * Here we are using a Dictionray for configurate the Navigation Logic of all the screens in the application.
+ * We use [ViewController ClassName + Messenger Name] as the key, and the specific method as the value.
+ * If we find a match in the dictionray, then we will run that method for next step.
+ *
+ * In future, to improve this, we could use XML or JSON files to configurate the map, then read the files and wire them up dynamically in code.
+ **/
 + (SEL)selectorOfClass:(Class)class messengerName:(NSString *)messengerName {
   static NSDictionary *selectorMap = nil;
   if (!selectorMap) {

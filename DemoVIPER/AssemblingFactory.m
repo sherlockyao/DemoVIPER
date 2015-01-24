@@ -28,7 +28,7 @@ static NSString *const HomeViewIdentifier = @"HomeViewController";
   return viewController;
 }
 
-+ (UIViewController *)assembleHomeViewWithParams:(NSDictionary *)params {
++ (UIViewController *)assembleHomeView {
   HomeViewController *viewController = [[UIStoryboard mainStoryboard] instantiateViewControllerWithIdentifier:HomeViewIdentifier];
   CommunicatePresenter *communicatePresenter = [CommunicatePresenter new];
   SiriInteractor *siriInteractor = [SiriInteractor new];

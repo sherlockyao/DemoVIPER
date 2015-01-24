@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 originate. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
 @interface AssemblingFactory : NSObject
 
-+ (UIViewController *)assembleSplashView;
-+ (UIViewController *)assembleHomeViewWithParams:(NSDictionary *)params;
++ (BaseViewController *)assembleSplashView;
++ (BaseViewController *)assembleHomeView;
 
 @end
