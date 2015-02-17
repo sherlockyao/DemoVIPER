@@ -12,6 +12,10 @@
 
 @property (nonatomic, strong) NSDictionary *params;
 
+// Overwrite these methods to do proper configurations
+- (void)configureProperties;
+- (void)configureViews;
+
 - (NSArray *)presenters; // Overwrite this method to return all the presetners that want to have view related callbacks, like viewDidLoad: etc.
 
 @end

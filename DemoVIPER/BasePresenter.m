@@ -10,6 +10,10 @@
 
 @implementation BasePresenter
 
+- (id)parameterNamed:(NSString *)paramName {
+  return [self.mainViewController.params valueForKey:paramName];
+}
+
 - (void)viewDidLoad:(UIViewController *)viewController { }
 
 - (void)view:(UIViewController *)viewController willAppear:(BOOL)animated { }

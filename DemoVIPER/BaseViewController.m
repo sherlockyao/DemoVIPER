@@ -36,6 +36,8 @@
   for (BasePresenter *presenter in [self presenters]) {
     presenter.mainViewController = self;
   }
+  [self configureProperties];
+  [self configureViews];
 }
 
 - (void)viewDidLoad {
@@ -72,6 +74,9 @@
     [presenter view:self didDisappear:animated];
   }
 }
+
+- (void)configureProperties {}
+- (void)configureViews {}
 
 - (NSArray *)presenters {
   return @[];

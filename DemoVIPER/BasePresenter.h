@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
 @interface BasePresenter : NSObject
 
 // The current view controller that is presenting user interfaces
 // So the presenter can use it to navigate to other view controllers
-@property (nonatomic, weak) UIViewController *mainViewController;
+@property (nonatomic, weak) BaseViewController *mainViewController;
+
+- (id)parameterNamed:(NSString *)paramName;
 
 - (void)viewDidLoad:(UIViewController *)viewController;
 - (void)view:(UIViewController *)viewController willAppear:(BOOL)animated;
