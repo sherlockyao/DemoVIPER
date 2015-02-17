@@ -30,6 +30,8 @@
 		16E4220B1A92DE5D00621970 /* AskQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E4220A1A92DE5D00621970 /* AskQuestionViewController.m */; };
 		16E4220E1A92DE7300621970 /* QuestionHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E4220D1A92DE7300621970 /* QuestionHistoryViewController.m */; };
 		16E422111A92DE8300621970 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E422101A92DE8300621970 /* SettingViewController.m */; };
+		16E422141A92F29300621970 /* MenuPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E422131A92F29300621970 /* MenuPanelView.m */; };
+		16E422161A92F2B100621970 /* MenuPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E422151A92F2B100621970 /* MenuPanelView.xib */; };
 		16EECE9C1A737C5200CC90A4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 16EECE9B1A737C5200CC90A4 /* README.md */; };
 		16EECE9F1A73884600CC90A4 /* RoutingSequence.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE9E1A73884600CC90A4 /* RoutingSequence.png */; };
 /* End PBXBuildFile section */
@@ -90,6 +92,9 @@
 		16E4220D1A92DE7300621970 /* QuestionHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionHistoryViewController.m; path = Classes/Views/QuestionHistoryViewController.m; sourceTree = "<group>"; };
 		16E4220F1A92DE8300621970 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingViewController.h; path = Classes/Views/SettingViewController.h; sourceTree = "<group>"; };
 		16E422101A92DE8300621970 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingViewController.m; path = Classes/Views/SettingViewController.m; sourceTree = "<group>"; };
+		16E422121A92F29300621970 /* MenuPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuPanelView.h; path = Classes/Views/MenuPanelView.h; sourceTree = "<group>"; };
+		16E422131A92F29300621970 /* MenuPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuPanelView.m; path = Classes/Views/MenuPanelView.m; sourceTree = "<group>"; };
+		16E422151A92F2B100621970 /* MenuPanelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuPanelView.xib; path = Classes/Views/MenuPanelView.xib; sourceTree = "<group>"; };
 		16EECE9B1A737C5200CC90A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		16EECE9E1A73884600CC90A4 /* RoutingSequence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RoutingSequence.png; path = Documents/RoutingSequence.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -278,6 +283,9 @@
 		16E421D51A92D82900621970 /* Menu Panel */ = {
 			isa = PBXGroup;
 			children = (
+				16E422121A92F29300621970 /* MenuPanelView.h */,
+				16E422131A92F29300621970 /* MenuPanelView.m */,
+				16E422151A92F2B100621970 /* MenuPanelView.xib */,
 			);
 			name = "Menu Panel";
 			sourceTree = "<group>";
@@ -401,6 +409,7 @@
 				162F28D719FDDD780043C638 /* LaunchScreen.xib in Resources */,
 				16E421DD1A92DACC00621970 /* Question.storyboard in Resources */,
 				16E421E01A92DAD100621970 /* Setting.storyboard in Resources */,
+				16E422161A92F2B100621970 /* MenuPanelView.xib in Resources */,
 				162F28D419FDDD780043C638 /* Images.xcassets in Resources */,
 				16EECE9F1A73884600CC90A4 /* RoutingSequence.png in Resources */,
 			);
@@ -428,6 +437,7 @@
 				16E422111A92DE8300621970 /* SettingViewController.m in Sources */,
 				16E421F31A92DC1400621970 /* HomeViewController.m in Sources */,
 				16E421FE1A92DC3200621970 /* CommunicatePresenter.m in Sources */,
+				16E422141A92F29300621970 /* MenuPanelView.m in Sources */,
 				162F28CC19FDDD780043C638 /* AppDelegate.m in Sources */,
 				162F28C919FDDD780043C638 /* main.m in Sources */,
 				16E421F21A92DC1400621970 /* BaseViewController.m in Sources */,
