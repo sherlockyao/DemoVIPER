@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
+
+@class BaseViewController;
 
 @interface BasePresenter : NSObject
 

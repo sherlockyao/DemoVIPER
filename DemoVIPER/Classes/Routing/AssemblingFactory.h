@@ -10,7 +10,9 @@
 
 @interface AssemblingFactory : NSObject
 
-+ (BaseViewController *)assembleSplashView;
-+ (BaseViewController *)assembleHomeView;
++ (BaseViewController *)assembleAskQuestionScreen;
++ (BaseViewController *)assembleQuestionHistoryScreen;
+
++ (BaseViewController *)assembleSettingScreen;
 
 @end

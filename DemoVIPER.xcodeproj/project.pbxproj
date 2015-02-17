@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		162F28C919FDDD780043C638 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28C819FDDD780043C638 /* main.m */; };
 		162F28CC19FDDD780043C638 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28CB19FDDD780043C638 /* AppDelegate.m */; };
-		162F28D219FDDD780043C638 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162F28D019FDDD780043C638 /* Main.storyboard */; };
 		162F28D419FDDD780043C638 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162F28D319FDDD780043C638 /* Images.xcassets */; };
 		162F28D719FDDD780043C638 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 162F28D519FDDD780043C638 /* LaunchScreen.xib */; };
 		162F28E319FDDD780043C638 /* DemoVIPERTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28E219FDDD780043C638 /* DemoVIPERTests.m */; };
@@ -19,12 +18,7 @@
 		16E421EA1A92DC0400621970 /* PageMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421E61A92DC0400621970 /* PageMessenger.m */; };
 		16E421EB1A92DC0400621970 /* Wireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421E81A92DC0400621970 /* Wireframe.m */; };
 		16E421F21A92DC1400621970 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421ED1A92DC1400621970 /* BaseViewController.m */; };
-		16E421F31A92DC1400621970 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421EF1A92DC1400621970 /* HomeViewController.m */; };
-		16E421F41A92DC1400621970 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421F11A92DC1400621970 /* SplashViewController.m */; };
 		16E421FD1A92DC3200621970 /* BasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421F81A92DC3200621970 /* BasePresenter.m */; };
-		16E421FE1A92DC3200621970 /* CommunicatePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421FA1A92DC3200621970 /* CommunicatePresenter.m */; };
-		16E421FF1A92DC3200621970 /* InitializationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421FC1A92DC3200621970 /* InitializationPresenter.m */; };
-		16E422021A92DC4600621970 /* SiriInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E422011A92DC4600621970 /* SiriInteractor.m */; };
 		16E422051A92DC5500621970 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E422041A92DC5500621970 /* NSString+Utility.m */; };
 		16E422081A92DC6900621970 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E422071A92DC6900621970 /* Config.m */; };
 		16E4220B1A92DE5D00621970 /* AskQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E4220A1A92DE5D00621970 /* AskQuestionViewController.m */; };
@@ -32,6 +26,7 @@
 		16E422111A92DE8300621970 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E422101A92DE8300621970 /* SettingViewController.m */; };
 		16E422141A92F29300621970 /* MenuPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E422131A92F29300621970 /* MenuPanelView.m */; };
 		16E422161A92F2B100621970 /* MenuPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E422151A92F2B100621970 /* MenuPanelView.xib */; };
+		16E422191A92F90200621970 /* NavigationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E422181A92F90200621970 /* NavigationPresenter.m */; };
 		16EECE9C1A737C5200CC90A4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 16EECE9B1A737C5200CC90A4 /* README.md */; };
 		16EECE9F1A73884600CC90A4 /* RoutingSequence.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE9E1A73884600CC90A4 /* RoutingSequence.png */; };
 /* End PBXBuildFile section */
@@ -52,7 +47,6 @@
 		162F28C819FDDD780043C638 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		162F28CA19FDDD780043C638 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		162F28CB19FDDD780043C638 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		162F28D119FDDD780043C638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		162F28D319FDDD780043C638 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		162F28D619FDDD780043C638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		162F28DC19FDDD780043C638 /* DemoVIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoVIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,20 +62,8 @@
 		16E421E81A92DC0400621970 /* Wireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Wireframe.m; path = Classes/Routing/Wireframe.m; sourceTree = "<group>"; };
 		16E421EC1A92DC1400621970 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Classes/Views/BaseViewController.h; sourceTree = "<group>"; };
 		16E421ED1A92DC1400621970 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Classes/Views/BaseViewController.m; sourceTree = "<group>"; };
-		16E421EE1A92DC1400621970 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Classes/Views/HomeViewController.h; sourceTree = "<group>"; };
-		16E421EF1A92DC1400621970 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Classes/Views/HomeViewController.m; sourceTree = "<group>"; };
-		16E421F01A92DC1400621970 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashViewController.h; path = Classes/Views/SplashViewController.h; sourceTree = "<group>"; };
-		16E421F11A92DC1400621970 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplashViewController.m; path = Classes/Views/SplashViewController.m; sourceTree = "<group>"; };
-		16E421F51A92DC2200621970 /* MessageBoardViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageBoardViewInterface.h; path = Classes/ViewInterfaces/MessageBoardViewInterface.h; sourceTree = "<group>"; };
-		16E421F61A92DC2200621970 /* ProgressViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressViewInterface.h; path = Classes/ViewInterfaces/ProgressViewInterface.h; sourceTree = "<group>"; };
 		16E421F71A92DC3200621970 /* BasePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasePresenter.h; path = Classes/Presenters/BasePresenter.h; sourceTree = "<group>"; };
 		16E421F81A92DC3200621970 /* BasePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasePresenter.m; path = Classes/Presenters/BasePresenter.m; sourceTree = "<group>"; };
-		16E421F91A92DC3200621970 /* CommunicatePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommunicatePresenter.h; path = Classes/Presenters/CommunicatePresenter.h; sourceTree = "<group>"; };
-		16E421FA1A92DC3200621970 /* CommunicatePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommunicatePresenter.m; path = Classes/Presenters/CommunicatePresenter.m; sourceTree = "<group>"; };
-		16E421FB1A92DC3200621970 /* InitializationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InitializationPresenter.h; path = Classes/Presenters/InitializationPresenter.h; sourceTree = "<group>"; };
-		16E421FC1A92DC3200621970 /* InitializationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InitializationPresenter.m; path = Classes/Presenters/InitializationPresenter.m; sourceTree = "<group>"; };
-		16E422001A92DC4600621970 /* SiriInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SiriInteractor.h; path = Classes/Interactors/SiriInteractor.h; sourceTree = "<group>"; };
-		16E422011A92DC4600621970 /* SiriInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SiriInteractor.m; path = Classes/Interactors/SiriInteractor.m; sourceTree = "<group>"; };
 		16E422031A92DC5500621970 /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Utility.h"; path = "Classes/Utilities/NSString+Utility.h"; sourceTree = "<group>"; };
 		16E422041A92DC5500621970 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Utility.m"; path = "Classes/Utilities/NSString+Utility.m"; sourceTree = "<group>"; };
 		16E422061A92DC6900621970 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = Classes/Config.h; sourceTree = "<group>"; };
@@ -95,6 +77,8 @@
 		16E422121A92F29300621970 /* MenuPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuPanelView.h; path = Classes/Views/MenuPanelView.h; sourceTree = "<group>"; };
 		16E422131A92F29300621970 /* MenuPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuPanelView.m; path = Classes/Views/MenuPanelView.m; sourceTree = "<group>"; };
 		16E422151A92F2B100621970 /* MenuPanelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuPanelView.xib; path = Classes/Views/MenuPanelView.xib; sourceTree = "<group>"; };
+		16E422171A92F90200621970 /* NavigationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationPresenter.h; path = Classes/Presenters/NavigationPresenter.h; sourceTree = "<group>"; };
+		16E422181A92F90200621970 /* NavigationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationPresenter.m; path = Classes/Presenters/NavigationPresenter.m; sourceTree = "<group>"; };
 		16EECE9B1A737C5200CC90A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		16EECE9E1A73884600CC90A4 /* RoutingSequence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RoutingSequence.png; path = Documents/RoutingSequence.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,7 +186,6 @@
 		162F28EE19FDDDF90043C638 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				162F28D019FDDD780043C638 /* Main.storyboard */,
 				16E421DF1A92DACC00621970 /* Question.storyboard */,
 				16E421E21A92DAD100621970 /* Setting.storyboard */,
 			);
@@ -227,10 +210,6 @@
 			children = (
 				16E421EC1A92DC1400621970 /* BaseViewController.h */,
 				16E421ED1A92DC1400621970 /* BaseViewController.m */,
-				16E421EE1A92DC1400621970 /* HomeViewController.h */,
-				16E421EF1A92DC1400621970 /* HomeViewController.m */,
-				16E421F01A92DC1400621970 /* SplashViewController.h */,
-				16E421F11A92DC1400621970 /* SplashViewController.m */,
 				162F28EE19FDDDF90043C638 /* Storyboards */,
 				16E421D51A92D82900621970 /* Menu Panel */,
 				16E421D61A92D83400621970 /* Ask Question Screen */,
@@ -243,8 +222,6 @@
 		162F28F119FDDE720043C638 /* View Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				16E421F51A92DC2200621970 /* MessageBoardViewInterface.h */,
-				16E421F61A92DC2200621970 /* ProgressViewInterface.h */,
 			);
 			name = "View Interfaces";
 			sourceTree = "<group>";
@@ -254,10 +231,8 @@
 			children = (
 				16E421F71A92DC3200621970 /* BasePresenter.h */,
 				16E421F81A92DC3200621970 /* BasePresenter.m */,
-				16E421F91A92DC3200621970 /* CommunicatePresenter.h */,
-				16E421FA1A92DC3200621970 /* CommunicatePresenter.m */,
-				16E421FB1A92DC3200621970 /* InitializationPresenter.h */,
-				16E421FC1A92DC3200621970 /* InitializationPresenter.m */,
+				16E422171A92F90200621970 /* NavigationPresenter.h */,
+				16E422181A92F90200621970 /* NavigationPresenter.m */,
 			);
 			name = Presenters;
 			sourceTree = "<group>";
@@ -265,8 +240,6 @@
 		162F28F319FDDE990043C638 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
-				16E422001A92DC4600621970 /* SiriInteractor.h */,
-				16E422011A92DC4600621970 /* SiriInteractor.m */,
 			);
 			name = Interactors;
 			sourceTree = "<group>";
@@ -405,7 +378,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				162F28D219FDDD780043C638 /* Main.storyboard in Resources */,
 				162F28D719FDDD780043C638 /* LaunchScreen.xib in Resources */,
 				16E421DD1A92DACC00621970 /* Question.storyboard in Resources */,
 				16E421E01A92DAD100621970 /* Setting.storyboard in Resources */,
@@ -430,13 +402,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				16E421FD1A92DC3200621970 /* BasePresenter.m in Sources */,
+				16E422191A92F90200621970 /* NavigationPresenter.m in Sources */,
 				16E421E91A92DC0400621970 /* AssemblingFactory.m in Sources */,
-				16E421FF1A92DC3200621970 /* InitializationPresenter.m in Sources */,
 				16EECE9C1A737C5200CC90A4 /* README.md in Sources */,
-				16E421F41A92DC1400621970 /* SplashViewController.m in Sources */,
 				16E422111A92DE8300621970 /* SettingViewController.m in Sources */,
-				16E421F31A92DC1400621970 /* HomeViewController.m in Sources */,
-				16E421FE1A92DC3200621970 /* CommunicatePresenter.m in Sources */,
 				16E422141A92F29300621970 /* MenuPanelView.m in Sources */,
 				162F28CC19FDDD780043C638 /* AppDelegate.m in Sources */,
 				162F28C919FDDD780043C638 /* main.m in Sources */,
@@ -447,7 +416,6 @@
 				16E4220B1A92DE5D00621970 /* AskQuestionViewController.m in Sources */,
 				16E421EA1A92DC0400621970 /* PageMessenger.m in Sources */,
 				16E422051A92DC5500621970 /* NSString+Utility.m in Sources */,
-				16E422021A92DC4600621970 /* SiriInteractor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,14 +438,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		162F28D019FDDD780043C638 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				162F28D119FDDD780043C638 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		162F28D519FDDD780043C638 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

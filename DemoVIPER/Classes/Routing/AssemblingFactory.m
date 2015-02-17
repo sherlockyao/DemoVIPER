@@ -7,13 +7,17 @@
 //
 
 #import "AssemblingFactory.h"
-#import "SplashViewController.h"
-#import "HomeViewController.h"
+#import "AskQuestionViewController.h"
+#import "QuestionHistoryViewController.h"
+#import "SettingViewController.h"
 #import <UIKit/UIKit.h>
 
-static NSString *const SplashViewIdentifier = @"SplashViewController";
-static NSString *const HomeViewIdentifier = @"HomeViewController";
-static NSString *const MainStoryboardName = @"Main";
+static NSString *const AskQuestionScreenIdentifier = @"AskQuestionViewController";
+static NSString *const QuestionHistoryScreenIdentifier = @"QuestionHistoryViewController";
+static NSString *const SettingScreenIdentifier = @"SettingViewController";
+
+static NSString *const QuestionStoryboardName = @"Question";
+static NSString *const SettingStoryboardName = @"Setting";
 
 
 /**
@@ -21,16 +25,25 @@ static NSString *const MainStoryboardName = @"Main";
  **/
 @interface UIStoryboard (Demo)
 
-+ (instancetype)mainStoryboard;
++ (instancetype)questionStoryboard;
++ (instancetype)settingStoryboard;
 
 @end
 
 @implementation UIStoryboard (Demo)
 
-+ (instancetype)mainStoryboard {
++ (instancetype)questionStoryboard {
   static UIStoryboard *storyboard = nil;
   if (!storyboard) {
-    storyboard = [UIStoryboard storyboardWithName:MainStoryboardName bundle:nil];
+    storyboard = [UIStoryboard storyboardWithName:QuestionStoryboardName bundle:nil];
+  }
+  return storyboard;
+}
+
++ (instancetype)settingStoryboard {
+  static UIStoryboard *storyboard = nil;
+  if (!storyboard) {
+    storyboard = [UIStoryboard storyboardWithName:SettingStoryboardName bundle:nil];
   }
   return storyboard;
 }
@@ -41,32 +54,29 @@ static NSString *const MainStoryboardName = @"Main";
 
 @implementation AssemblingFactory
 
-+ (UIViewController *)assembleSplashView {
-  SplashViewController *viewController = [[UIStoryboard mainStoryboard] instantiateViewControllerWithIdentifier:SplashViewIdentifier];
-  InitializationPresenter *initializationPresenter = [InitializationPresenter new];
++ (BaseViewController *)assembleAskQuestionScreen {
+  AskQuestionViewController *viewController = [[UIStoryboard questionStoryboard] instantiateViewControllerWithIdentifier:AskQuestionScreenIdentifier];
   
-  // wire up
-  viewController.initializationPresenter = initializationPresenter;
-  initializationPresenter.progressView = viewController;
-  initializationPresenter.mainViewController = viewController;
+  viewController.navigationPresenter = [NavigationPresenter new];
   
   return viewController;
 }
 
-+ (UIViewController *)assembleHomeView {
-  HomeViewController *viewController = [[UIStoryboard mainStoryboard] instantiateViewControllerWithIdentifier:HomeViewIdentifier];
-  CommunicatePresenter *communicatePresenter = [CommunicatePresenter new];
-  SiriInteractor *siriInteractor = [SiriInteractor new];
++ (BaseViewController *)assembleQuestionHistoryScreen {
+  QuestionHistoryViewController *viewController = [[UIStoryboard questionStoryboard] instantiateViewControllerWithIdentifier:QuestionHistoryScreenIdentifier];
   
-  // wire up
-  viewController.communicatePresenter = communicatePresenter;
-  communicatePresenter.progressView = viewController;
-  communicatePresenter.messageBoard = viewController;
-  communicatePresenter.mainViewController = viewController;
-  communicatePresenter.siriInteractor = siriInteractor;
-  siriInteractor.delegate = communicatePresenter;
+  viewController.navigationPresenter = [NavigationPresenter new];
+
+  return viewController;
+}
+
++ (BaseViewController *)assembleSettingScreen {
+  SettingViewController *viewController = [[UIStoryboard settingStoryboard] instantiateViewControllerWithIdentifier:SettingScreenIdentifier];
+  
+  viewController.navigationPresenter = [NavigationPresenter new];
   
   return viewController;
+
 }
 
 @end

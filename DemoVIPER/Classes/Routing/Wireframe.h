@@ -11,8 +11,9 @@
 
 @interface Wireframe : NSObject
 
-+ (UIViewController *)entryPoint;
++ (UIViewController *)entryScreen;
 
-+ (void)moveToNextPageOfViewController:(UIViewController *)viewController messenger:(PageMessenger *)messenger;
++ (void)moveToNextScreenOfViewController:(UIViewController *)viewController messenger:(PageMessenger *)messenger;
++ (void)moveToPreviousScreenOfViewController:(UIViewController *)viewController;
 
 @end

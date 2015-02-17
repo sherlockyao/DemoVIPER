@@ -7,6 +7,7 @@
 //
 
 #import "BasePresenter.h"
+#import "BaseViewController.h"
 
 @implementation BasePresenter
 

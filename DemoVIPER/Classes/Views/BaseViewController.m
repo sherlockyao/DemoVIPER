@@ -7,7 +7,6 @@
 //
 
 #import "BaseViewController.h"
-#import "BasePresenter.h"
 
 @interface BaseViewController ()
 
@@ -79,7 +78,7 @@
 - (void)configureViews {}
 
 - (NSArray *)presenters {
-  return @[];
+  return @[self.navigationPresenter];
 }
 
 @end

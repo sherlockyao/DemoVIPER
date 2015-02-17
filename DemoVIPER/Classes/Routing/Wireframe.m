@@ -9,7 +9,7 @@
 #import "Wireframe.h"
 #import "Config.h"
 #import "AssemblingFactory.h"
-#import "SplashViewController.h"
+#import "AskQuestionViewController.h"
 #import "NSString+Utility.h"
 #import <UIKit/UIKit.h>
 
@@ -39,26 +39,56 @@
  */
 @implementation Wireframe
 
-+ (UIViewController *)entryPoint {
-  return [AssemblingFactory assembleSplashView];
++ (UIViewController *)entryScreen {
+  return [self loadAskQuestionScreen];
 }
 
-+ (void)moveToNextPageOfViewController:(UIViewController *)viewController messenger:(PageMessenger *)messenger {
++ (void)moveToNextScreenOfViewController:(UIViewController *)viewController messenger:(PageMessenger *)messenger {
+  // find the corresponding selector
   SEL selector = [self selectorOfClass:[viewController class] messengerName:[messenger name]];
+  
+  // cast to IMP to avoid compiler's warning
   IMP imp = [[self class] methodForSelector:selector];
-  void (*func)(id, SEL, UIViewController*, NSDictionary*) = (void *)imp;
-  func([self class], selector, viewController, [messenger params]);
+  id (*func)(id, SEL) = (id (*)(id, SEL))imp;
+  
+  BaseViewController *targetViewController = func([self class], selector);
+  if (targetViewController) {
+    targetViewController.params = [messenger params];
+    dispatch_async(dispatch_get_main_queue(), ^{
+      [viewController presentViewController:targetViewController animated:NO completion:nil];
+    });
+  }
 }
 
-#pragma mark - Navigation Methods
-
-+ (void)moveToHomeViewController:(UIViewController *)viewController params:(NSDictionary *)params {
-  BaseViewController *homeViewController = [AssemblingFactory assembleHomeView];
-  homeViewController.params = params;
-  [viewController presentViewController:homeViewController animated:NO completion:nil];
++ (void)moveToPreviousScreenOfViewController:(UIViewController *)viewController {
+  // it is very common we use navigation controller in the app
+  // so we can add logic code here to check whether to use 'pop' or 'dismiss'
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [viewController dismissViewControllerAnimated:YES completion:nil];
+  });
 }
 
-#pragma mark - Private Methods
+#pragma mark - Route Mapping Methods
+
++ (BaseViewController *)loadAskQuestionScreen {
+  return [AssemblingFactory assembleAskQuestionScreen];
+}
+
++ (BaseViewController *)loadQuestionHistoryScreen {
+  BaseViewController *viewController = [AssemblingFactory assembleQuestionHistoryScreen];
+  viewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+  return viewController;
+}
+
++ (BaseViewController *)loadSettingScreen {
+  BaseViewController *viewController = [AssemblingFactory assembleSettingScreen];
+  viewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+  return viewController;
+}
+
++ (BaseViewController *)loadEmptyScreen {
+  return nil;
+}
 
 /**
  * Here we are using a Dictionray for configurate the Navigation Logic of all the screens in the application.
@@ -71,15 +101,13 @@
   static NSDictionary *selectorMap = nil;
   if (!selectorMap) {
     selectorMap = @{
-                    [SplashViewController wireframeKey:PageMessengerNameDefault] : [NSValue valueWithPointer:@selector(moveToHomeViewController:params:)]
+                    [AskQuestionViewController wireframeKey:PageMessengerNameDefault] : @"loadQuestionHistoryScreen",
+                    
+                    [AskQuestionViewController wireframeKey:PageMessengerNameSetting] : @"loadSettingScreen",
                     };
   }
-  NSValue *value = [selectorMap valueForKey:[[class description] conj:messengerName]];
-  return value ? [value pointerValue] : @selector(emptyMove:params:);
-}
-
-+ (void)emptyMove:(UIViewController *)viewController params:(NSDictionary *)params {
-  // empty method for a nil selector
+  NSString *selectorName = [selectorMap valueForKey:[[class description] conj:messengerName]];
+  return selectorName ? NSSelectorFromString(selectorName) : @selector(loadEmptyScreen);
 }
 
 @end

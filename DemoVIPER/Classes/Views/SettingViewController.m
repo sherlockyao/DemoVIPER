@@ -27,6 +27,7 @@
 #pragma mark - IB Actions
 
 - (IBAction)backButtonTouchUpInside:(id)sender {
+  [self.navigationPresenter goBack];
 }
 
 @end
