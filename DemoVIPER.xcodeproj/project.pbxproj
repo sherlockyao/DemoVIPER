@@ -9,24 +9,24 @@
 /* Begin PBXBuildFile section */
 		162F28C919FDDD780043C638 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28C819FDDD780043C638 /* main.m */; };
 		162F28CC19FDDD780043C638 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28CB19FDDD780043C638 /* AppDelegate.m */; };
-		162F28CF19FDDD780043C638 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28CE19FDDD780043C638 /* HomeViewController.m */; };
 		162F28D219FDDD780043C638 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162F28D019FDDD780043C638 /* Main.storyboard */; };
 		162F28D419FDDD780043C638 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162F28D319FDDD780043C638 /* Images.xcassets */; };
 		162F28D719FDDD780043C638 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 162F28D519FDDD780043C638 /* LaunchScreen.xib */; };
 		162F28E319FDDD780043C638 /* DemoVIPERTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28E219FDDD780043C638 /* DemoVIPERTests.m */; };
-		162F28F619FDDFB30043C638 /* Wireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28F519FDDFB30043C638 /* Wireframe.m */; };
-		162F28FA19FDE3190043C638 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28F919FDE3190043C638 /* BaseViewController.m */; };
-		162F28FD19FDE3FD0043C638 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28FC19FDE3FD0043C638 /* SplashViewController.m */; };
-		162F290019FDE4720043C638 /* PageMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28FF19FDE4720043C638 /* PageMessenger.m */; };
-		162F290319FDE4EC0043C638 /* AssemblingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F290219FDE4EC0043C638 /* AssemblingFactory.m */; };
-		162F290A19FDEA160043C638 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F290919FDEA160043C638 /* NSString+Utility.m */; };
-		162F291419FDF4DA0043C638 /* BasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F291319FDF4DA0043C638 /* BasePresenter.m */; };
-		162F291719FDF6890043C638 /* InitializationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F291619FDF6890043C638 /* InitializationPresenter.m */; };
-		164DD3EC1A009465005DD629 /* SiriInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 164DD3EB1A009465005DD629 /* SiriInteractor.m */; };
-		164DD3EF1A00971F005DD629 /* CommunicatePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 164DD3EE1A00971F005DD629 /* CommunicatePresenter.m */; };
-		16E421D41A92CF2A00621970 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421D31A92CF2A00621970 /* Config.m */; };
 		16E421DD1A92DACC00621970 /* Question.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421DF1A92DACC00621970 /* Question.storyboard */; };
 		16E421E01A92DAD100621970 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421E21A92DAD100621970 /* Setting.storyboard */; };
+		16E421E91A92DC0400621970 /* AssemblingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421E41A92DC0400621970 /* AssemblingFactory.m */; };
+		16E421EA1A92DC0400621970 /* PageMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421E61A92DC0400621970 /* PageMessenger.m */; };
+		16E421EB1A92DC0400621970 /* Wireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421E81A92DC0400621970 /* Wireframe.m */; };
+		16E421F21A92DC1400621970 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421ED1A92DC1400621970 /* BaseViewController.m */; };
+		16E421F31A92DC1400621970 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421EF1A92DC1400621970 /* HomeViewController.m */; };
+		16E421F41A92DC1400621970 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421F11A92DC1400621970 /* SplashViewController.m */; };
+		16E421FD1A92DC3200621970 /* BasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421F81A92DC3200621970 /* BasePresenter.m */; };
+		16E421FE1A92DC3200621970 /* CommunicatePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421FA1A92DC3200621970 /* CommunicatePresenter.m */; };
+		16E421FF1A92DC3200621970 /* InitializationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421FC1A92DC3200621970 /* InitializationPresenter.m */; };
+		16E422021A92DC4600621970 /* SiriInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E422011A92DC4600621970 /* SiriInteractor.m */; };
+		16E422051A92DC5500621970 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E422041A92DC5500621970 /* NSString+Utility.m */; };
+		16E422081A92DC6900621970 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E422071A92DC6900621970 /* Config.m */; };
 		16EECE9C1A737C5200CC90A4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 16EECE9B1A737C5200CC90A4 /* README.md */; };
 		16EECE9F1A73884600CC90A4 /* RoutingSequence.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE9E1A73884600CC90A4 /* RoutingSequence.png */; };
 /* End PBXBuildFile section */
@@ -47,40 +47,40 @@
 		162F28C819FDDD780043C638 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		162F28CA19FDDD780043C638 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		162F28CB19FDDD780043C638 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		162F28CD19FDDD780043C638 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		162F28CE19FDDD780043C638 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		162F28D119FDDD780043C638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		162F28D319FDDD780043C638 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		162F28D619FDDD780043C638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		162F28DC19FDDD780043C638 /* DemoVIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoVIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		162F28E119FDDD780043C638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		162F28E219FDDD780043C638 /* DemoVIPERTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoVIPERTests.m; sourceTree = "<group>"; };
-		162F28F419FDDFB30043C638 /* Wireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wireframe.h; sourceTree = "<group>"; };
-		162F28F519FDDFB30043C638 /* Wireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wireframe.m; sourceTree = "<group>"; };
-		162F28F819FDE3190043C638 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		162F28F919FDE3190043C638 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		162F28FB19FDE3FD0043C638 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
-		162F28FC19FDE3FD0043C638 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
-		162F28FE19FDE4720043C638 /* PageMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageMessenger.h; sourceTree = "<group>"; };
-		162F28FF19FDE4720043C638 /* PageMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageMessenger.m; sourceTree = "<group>"; };
-		162F290119FDE4EC0043C638 /* AssemblingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssemblingFactory.h; sourceTree = "<group>"; };
-		162F290219FDE4EC0043C638 /* AssemblingFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssemblingFactory.m; sourceTree = "<group>"; };
-		162F290819FDEA160043C638 /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
-		162F290919FDEA160043C638 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
-		162F291219FDF4DA0043C638 /* BasePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePresenter.h; sourceTree = "<group>"; };
-		162F291319FDF4DA0043C638 /* BasePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePresenter.m; sourceTree = "<group>"; };
-		162F291519FDF6890043C638 /* InitializationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitializationPresenter.h; sourceTree = "<group>"; };
-		162F291619FDF6890043C638 /* InitializationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitializationPresenter.m; sourceTree = "<group>"; };
-		162F291919FDF70E0043C638 /* ProgressViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressViewInterface.h; sourceTree = "<group>"; };
-		164DD3EA1A009465005DD629 /* SiriInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriInteractor.h; sourceTree = "<group>"; };
-		164DD3EB1A009465005DD629 /* SiriInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriInteractor.m; sourceTree = "<group>"; };
-		164DD3ED1A00971F005DD629 /* CommunicatePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicatePresenter.h; sourceTree = "<group>"; };
-		164DD3EE1A00971F005DD629 /* CommunicatePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicatePresenter.m; sourceTree = "<group>"; };
-		164DD3F01A00975E005DD629 /* MessageBoardViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageBoardViewInterface.h; sourceTree = "<group>"; };
-		16E421D21A92CF2A00621970 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
-		16E421D31A92CF2A00621970 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		16E421DE1A92DACC00621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Question.storyboard; sourceTree = "<group>"; };
 		16E421E11A92DAD100621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
+		16E421E31A92DC0400621970 /* AssemblingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssemblingFactory.h; path = Classes/Routing/AssemblingFactory.h; sourceTree = "<group>"; };
+		16E421E41A92DC0400621970 /* AssemblingFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AssemblingFactory.m; path = Classes/Routing/AssemblingFactory.m; sourceTree = "<group>"; };
+		16E421E51A92DC0400621970 /* PageMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PageMessenger.h; path = Classes/Routing/PageMessenger.h; sourceTree = "<group>"; };
+		16E421E61A92DC0400621970 /* PageMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PageMessenger.m; path = Classes/Routing/PageMessenger.m; sourceTree = "<group>"; };
+		16E421E71A92DC0400621970 /* Wireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wireframe.h; path = Classes/Routing/Wireframe.h; sourceTree = "<group>"; };
+		16E421E81A92DC0400621970 /* Wireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Wireframe.m; path = Classes/Routing/Wireframe.m; sourceTree = "<group>"; };
+		16E421EC1A92DC1400621970 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Classes/Views/BaseViewController.h; sourceTree = "<group>"; };
+		16E421ED1A92DC1400621970 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Classes/Views/BaseViewController.m; sourceTree = "<group>"; };
+		16E421EE1A92DC1400621970 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Classes/Views/HomeViewController.h; sourceTree = "<group>"; };
+		16E421EF1A92DC1400621970 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Classes/Views/HomeViewController.m; sourceTree = "<group>"; };
+		16E421F01A92DC1400621970 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashViewController.h; path = Classes/Views/SplashViewController.h; sourceTree = "<group>"; };
+		16E421F11A92DC1400621970 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplashViewController.m; path = Classes/Views/SplashViewController.m; sourceTree = "<group>"; };
+		16E421F51A92DC2200621970 /* MessageBoardViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageBoardViewInterface.h; path = Classes/ViewInterfaces/MessageBoardViewInterface.h; sourceTree = "<group>"; };
+		16E421F61A92DC2200621970 /* ProgressViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressViewInterface.h; path = Classes/ViewInterfaces/ProgressViewInterface.h; sourceTree = "<group>"; };
+		16E421F71A92DC3200621970 /* BasePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasePresenter.h; path = Classes/Presenters/BasePresenter.h; sourceTree = "<group>"; };
+		16E421F81A92DC3200621970 /* BasePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasePresenter.m; path = Classes/Presenters/BasePresenter.m; sourceTree = "<group>"; };
+		16E421F91A92DC3200621970 /* CommunicatePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommunicatePresenter.h; path = Classes/Presenters/CommunicatePresenter.h; sourceTree = "<group>"; };
+		16E421FA1A92DC3200621970 /* CommunicatePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommunicatePresenter.m; path = Classes/Presenters/CommunicatePresenter.m; sourceTree = "<group>"; };
+		16E421FB1A92DC3200621970 /* InitializationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InitializationPresenter.h; path = Classes/Presenters/InitializationPresenter.h; sourceTree = "<group>"; };
+		16E421FC1A92DC3200621970 /* InitializationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InitializationPresenter.m; path = Classes/Presenters/InitializationPresenter.m; sourceTree = "<group>"; };
+		16E422001A92DC4600621970 /* SiriInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SiriInteractor.h; path = Classes/Interactors/SiriInteractor.h; sourceTree = "<group>"; };
+		16E422011A92DC4600621970 /* SiriInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SiriInteractor.m; path = Classes/Interactors/SiriInteractor.m; sourceTree = "<group>"; };
+		16E422031A92DC5500621970 /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Utility.h"; path = "Classes/Utilities/NSString+Utility.h"; sourceTree = "<group>"; };
+		16E422041A92DC5500621970 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Utility.m"; path = "Classes/Utilities/NSString+Utility.m"; sourceTree = "<group>"; };
+		16E422061A92DC6900621970 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = Classes/Config.h; sourceTree = "<group>"; };
+		16E422071A92DC6900621970 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Config.m; path = Classes/Config.m; sourceTree = "<group>"; };
 		16EECE9B1A737C5200CC90A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		16EECE9E1A73884600CC90A4 /* RoutingSequence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RoutingSequence.png; path = Documents/RoutingSequence.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,16 +162,16 @@
 		162F28EC19FDDD9B0043C638 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				16E422061A92DC6900621970 /* Config.h */,
+				16E422071A92DC6900621970 /* Config.m */,
+				162F28CA19FDDD780043C638 /* AppDelegate.h */,
+				162F28CB19FDDD780043C638 /* AppDelegate.m */,
 				162F28EF19FDDE580043C638 /* Routing */,
 				162F28F019FDDE660043C638 /* Views */,
 				162F28F119FDDE720043C638 /* View Interfaces */,
 				162F28F219FDDE8D0043C638 /* Presenters */,
 				162F28F319FDDE990043C638 /* Interactors */,
 				162F290719FDE9FB0043C638 /* Utilities */,
-				162F28CA19FDDD780043C638 /* AppDelegate.h */,
-				162F28CB19FDDD780043C638 /* AppDelegate.m */,
-				16E421D21A92CF2A00621970 /* Config.h */,
-				16E421D31A92CF2A00621970 /* Config.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -199,12 +199,12 @@
 		162F28EF19FDDE580043C638 /* Routing */ = {
 			isa = PBXGroup;
 			children = (
-				162F28F419FDDFB30043C638 /* Wireframe.h */,
-				162F28F519FDDFB30043C638 /* Wireframe.m */,
-				162F28FE19FDE4720043C638 /* PageMessenger.h */,
-				162F28FF19FDE4720043C638 /* PageMessenger.m */,
-				162F290119FDE4EC0043C638 /* AssemblingFactory.h */,
-				162F290219FDE4EC0043C638 /* AssemblingFactory.m */,
+				16E421E31A92DC0400621970 /* AssemblingFactory.h */,
+				16E421E41A92DC0400621970 /* AssemblingFactory.m */,
+				16E421E51A92DC0400621970 /* PageMessenger.h */,
+				16E421E61A92DC0400621970 /* PageMessenger.m */,
+				16E421E71A92DC0400621970 /* Wireframe.h */,
+				16E421E81A92DC0400621970 /* Wireframe.m */,
 			);
 			name = Routing;
 			sourceTree = "<group>";
@@ -212,16 +212,16 @@
 		162F28F019FDDE660043C638 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				162F28F819FDE3190043C638 /* BaseViewController.h */,
-				162F28F919FDE3190043C638 /* BaseViewController.m */,
+				16E421EC1A92DC1400621970 /* BaseViewController.h */,
+				16E421ED1A92DC1400621970 /* BaseViewController.m */,
+				16E421EE1A92DC1400621970 /* HomeViewController.h */,
+				16E421EF1A92DC1400621970 /* HomeViewController.m */,
+				16E421F01A92DC1400621970 /* SplashViewController.h */,
+				16E421F11A92DC1400621970 /* SplashViewController.m */,
 				16E421D51A92D82900621970 /* Menu Panel */,
 				16E421D61A92D83400621970 /* Ask Question Screen */,
 				16E421DC1A92DA9B00621970 /* Question History Screen */,
 				16E421D71A92D84400621970 /* Setting Screen */,
-				162F28FB19FDE3FD0043C638 /* SplashViewController.h */,
-				162F28FC19FDE3FD0043C638 /* SplashViewController.m */,
-				162F28CD19FDDD780043C638 /* HomeViewController.h */,
-				162F28CE19FDDD780043C638 /* HomeViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -229,8 +229,8 @@
 		162F28F119FDDE720043C638 /* View Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				162F291919FDF70E0043C638 /* ProgressViewInterface.h */,
-				164DD3F01A00975E005DD629 /* MessageBoardViewInterface.h */,
+				16E421F51A92DC2200621970 /* MessageBoardViewInterface.h */,
+				16E421F61A92DC2200621970 /* ProgressViewInterface.h */,
 			);
 			name = "View Interfaces";
 			sourceTree = "<group>";
@@ -238,12 +238,12 @@
 		162F28F219FDDE8D0043C638 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				162F291219FDF4DA0043C638 /* BasePresenter.h */,
-				162F291319FDF4DA0043C638 /* BasePresenter.m */,
-				162F291519FDF6890043C638 /* InitializationPresenter.h */,
-				162F291619FDF6890043C638 /* InitializationPresenter.m */,
-				164DD3ED1A00971F005DD629 /* CommunicatePresenter.h */,
-				164DD3EE1A00971F005DD629 /* CommunicatePresenter.m */,
+				16E421F71A92DC3200621970 /* BasePresenter.h */,
+				16E421F81A92DC3200621970 /* BasePresenter.m */,
+				16E421F91A92DC3200621970 /* CommunicatePresenter.h */,
+				16E421FA1A92DC3200621970 /* CommunicatePresenter.m */,
+				16E421FB1A92DC3200621970 /* InitializationPresenter.h */,
+				16E421FC1A92DC3200621970 /* InitializationPresenter.m */,
 			);
 			name = Presenters;
 			sourceTree = "<group>";
@@ -251,8 +251,8 @@
 		162F28F319FDDE990043C638 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
-				164DD3EA1A009465005DD629 /* SiriInteractor.h */,
-				164DD3EB1A009465005DD629 /* SiriInteractor.m */,
+				16E422001A92DC4600621970 /* SiriInteractor.h */,
+				16E422011A92DC4600621970 /* SiriInteractor.m */,
 			);
 			name = Interactors;
 			sourceTree = "<group>";
@@ -260,8 +260,8 @@
 		162F290719FDE9FB0043C638 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				162F290819FDEA160043C638 /* NSString+Utility.h */,
-				162F290919FDEA160043C638 /* NSString+Utility.m */,
+				16E422031A92DC5500621970 /* NSString+Utility.h */,
+				16E422041A92DC5500621970 /* NSString+Utility.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -405,21 +405,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				162F28F619FDDFB30043C638 /* Wireframe.m in Sources */,
-				162F28FA19FDE3190043C638 /* BaseViewController.m in Sources */,
-				162F28CF19FDDD780043C638 /* HomeViewController.m in Sources */,
-				164DD3EC1A009465005DD629 /* SiriInteractor.m in Sources */,
-				162F290319FDE4EC0043C638 /* AssemblingFactory.m in Sources */,
+				16E421FD1A92DC3200621970 /* BasePresenter.m in Sources */,
+				16E421E91A92DC0400621970 /* AssemblingFactory.m in Sources */,
+				16E421FF1A92DC3200621970 /* InitializationPresenter.m in Sources */,
 				16EECE9C1A737C5200CC90A4 /* README.md in Sources */,
-				162F291419FDF4DA0043C638 /* BasePresenter.m in Sources */,
-				162F291719FDF6890043C638 /* InitializationPresenter.m in Sources */,
+				16E421F41A92DC1400621970 /* SplashViewController.m in Sources */,
+				16E421F31A92DC1400621970 /* HomeViewController.m in Sources */,
+				16E421FE1A92DC3200621970 /* CommunicatePresenter.m in Sources */,
 				162F28CC19FDDD780043C638 /* AppDelegate.m in Sources */,
 				162F28C919FDDD780043C638 /* main.m in Sources */,
-				16E421D41A92CF2A00621970 /* Config.m in Sources */,
-				162F290019FDE4720043C638 /* PageMessenger.m in Sources */,
-				162F290A19FDEA160043C638 /* NSString+Utility.m in Sources */,
-				162F28FD19FDE3FD0043C638 /* SplashViewController.m in Sources */,
-				164DD3EF1A00971F005DD629 /* CommunicatePresenter.m in Sources */,
+				16E421F21A92DC1400621970 /* BaseViewController.m in Sources */,
+				16E422081A92DC6900621970 /* Config.m in Sources */,
+				16E421EB1A92DC0400621970 /* Wireframe.m in Sources */,
+				16E421EA1A92DC0400621970 /* PageMessenger.m in Sources */,
+				16E422051A92DC5500621970 /* NSString+Utility.m in Sources */,
+				16E422021A92DC4600621970 /* SiriInteractor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
