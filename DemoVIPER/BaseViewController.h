@@ -12,6 +12,6 @@
 
 @property (nonatomic, strong) NSDictionary *params;
 
-- (NSArray *)presenters; // Overwrite this method to return all the presetners that want to have view related call backs, like viewDidLoad: etc.
+- (NSArray *)presenters; // Overwrite this method to return all the presetners that want to have view related callbacks, like viewDidLoad: etc.
 
 @end

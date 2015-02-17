@@ -8,16 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * PageMessenger contains metadata & params, passing it while navigating between view controllers
+ *
+ * It acts like a role of Segue in Storyboard
+ **/
 @interface PageMessenger : NSObject
+
+@property (readonly, nonatomic, strong) NSString *name;
 
 + (instancetype)messenger;
 + (instancetype)messengerWithName:(NSString *)name;
 
-+ (NSString *)defaultName;
-
+- (NSDictionary *)params;
 - (void)addParam:(NSString *)name value:(id)value;
 
-- (NSString *)name;
-- (NSDictionary *)params;
 
 @end

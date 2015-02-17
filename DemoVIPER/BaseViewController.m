@@ -31,6 +31,13 @@
   return self;
 }
 
+- (void)loadView {
+  [super loadView];
+  for (BasePresenter *presenter in [self presenters]) {
+    presenter.mainViewController = self;
+  }
+}
+
 - (void)viewDidLoad {
   [super viewDidLoad];
   for (BasePresenter *presenter in [self presenters]) {

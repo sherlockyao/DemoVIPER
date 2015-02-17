@@ -7,12 +7,37 @@
 //
 
 #import "AssemblingFactory.h"
-#import "UIStoryboard+Demo.h"
 #import "SplashViewController.h"
 #import "HomeViewController.h"
+#import <UIKit/UIKit.h>
 
 static NSString *const SplashViewIdentifier = @"SplashViewController";
 static NSString *const HomeViewIdentifier = @"HomeViewController";
+static NSString *const MainStoryboardName = @"Main";
+
+
+/**
+ * UIStoryboard Category
+ **/
+@interface UIStoryboard (Demo)
+
++ (instancetype)mainStoryboard;
+
+@end
+
+@implementation UIStoryboard (Demo)
+
++ (instancetype)mainStoryboard {
+  static UIStoryboard *storyboard = nil;
+  if (!storyboard) {
+    storyboard = [UIStoryboard storyboardWithName:MainStoryboardName bundle:nil];
+  }
+  return storyboard;
+}
+
+@end
+
+
 
 @implementation AssemblingFactory
 

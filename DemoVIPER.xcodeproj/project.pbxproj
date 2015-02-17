@@ -19,13 +19,12 @@
 		162F28FD19FDE3FD0043C638 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28FC19FDE3FD0043C638 /* SplashViewController.m */; };
 		162F290019FDE4720043C638 /* PageMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28FF19FDE4720043C638 /* PageMessenger.m */; };
 		162F290319FDE4EC0043C638 /* AssemblingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F290219FDE4EC0043C638 /* AssemblingFactory.m */; };
-		162F290619FDE5880043C638 /* UIStoryboard+Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F290519FDE5880043C638 /* UIStoryboard+Demo.m */; };
 		162F290A19FDEA160043C638 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F290919FDEA160043C638 /* NSString+Utility.m */; };
-		162F291019FDF2570043C638 /* UIViewController+Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F290F19FDF2570043C638 /* UIViewController+Demo.m */; };
 		162F291419FDF4DA0043C638 /* BasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F291319FDF4DA0043C638 /* BasePresenter.m */; };
 		162F291719FDF6890043C638 /* InitializationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F291619FDF6890043C638 /* InitializationPresenter.m */; };
 		164DD3EC1A009465005DD629 /* SiriInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 164DD3EB1A009465005DD629 /* SiriInteractor.m */; };
 		164DD3EF1A00971F005DD629 /* CommunicatePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 164DD3EE1A00971F005DD629 /* CommunicatePresenter.m */; };
+		16E421D41A92CF2A00621970 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421D31A92CF2A00621970 /* Config.m */; };
 		16EECE9C1A737C5200CC90A4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 16EECE9B1A737C5200CC90A4 /* README.md */; };
 		16EECE9F1A73884600CC90A4 /* RoutingSequence.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE9E1A73884600CC90A4 /* RoutingSequence.png */; };
 /* End PBXBuildFile section */
@@ -64,12 +63,8 @@
 		162F28FF19FDE4720043C638 /* PageMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageMessenger.m; sourceTree = "<group>"; };
 		162F290119FDE4EC0043C638 /* AssemblingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssemblingFactory.h; sourceTree = "<group>"; };
 		162F290219FDE4EC0043C638 /* AssemblingFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssemblingFactory.m; sourceTree = "<group>"; };
-		162F290419FDE5880043C638 /* UIStoryboard+Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Demo.h"; sourceTree = "<group>"; };
-		162F290519FDE5880043C638 /* UIStoryboard+Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Demo.m"; sourceTree = "<group>"; };
 		162F290819FDEA160043C638 /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
 		162F290919FDEA160043C638 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
-		162F290E19FDF2570043C638 /* UIViewController+Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Demo.h"; sourceTree = "<group>"; };
-		162F290F19FDF2570043C638 /* UIViewController+Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Demo.m"; sourceTree = "<group>"; };
 		162F291219FDF4DA0043C638 /* BasePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePresenter.h; sourceTree = "<group>"; };
 		162F291319FDF4DA0043C638 /* BasePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePresenter.m; sourceTree = "<group>"; };
 		162F291519FDF6890043C638 /* InitializationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitializationPresenter.h; sourceTree = "<group>"; };
@@ -80,6 +75,8 @@
 		164DD3ED1A00971F005DD629 /* CommunicatePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicatePresenter.h; sourceTree = "<group>"; };
 		164DD3EE1A00971F005DD629 /* CommunicatePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicatePresenter.m; sourceTree = "<group>"; };
 		164DD3F01A00975E005DD629 /* MessageBoardViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageBoardViewInterface.h; sourceTree = "<group>"; };
+		16E421D21A92CF2A00621970 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		16E421D31A92CF2A00621970 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		16EECE9B1A737C5200CC90A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		16EECE9E1A73884600CC90A4 /* RoutingSequence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RoutingSequence.png; path = Documents/RoutingSequence.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +166,8 @@
 				162F290719FDE9FB0043C638 /* Utilities */,
 				162F28CA19FDDD780043C638 /* AppDelegate.h */,
 				162F28CB19FDDD780043C638 /* AppDelegate.m */,
+				16E421D21A92CF2A00621970 /* Config.h */,
+				16E421D31A92CF2A00621970 /* Config.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -200,10 +199,6 @@
 				162F28FF19FDE4720043C638 /* PageMessenger.m */,
 				162F290119FDE4EC0043C638 /* AssemblingFactory.h */,
 				162F290219FDE4EC0043C638 /* AssemblingFactory.m */,
-				162F290419FDE5880043C638 /* UIStoryboard+Demo.h */,
-				162F290519FDE5880043C638 /* UIStoryboard+Demo.m */,
-				162F290E19FDF2570043C638 /* UIViewController+Demo.h */,
-				162F290F19FDF2570043C638 /* UIViewController+Demo.m */,
 			);
 			name = Routing;
 			sourceTree = "<group>";
@@ -211,7 +206,8 @@
 		162F28F019FDDE660043C638 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				162F28F719FDDFEF0043C638 /* Base */,
+				162F28F819FDE3190043C638 /* BaseViewController.h */,
+				162F28F919FDE3190043C638 /* BaseViewController.m */,
 				162F28FB19FDE3FD0043C638 /* SplashViewController.h */,
 				162F28FC19FDE3FD0043C638 /* SplashViewController.m */,
 				162F28CD19FDDD780043C638 /* HomeViewController.h */,
@@ -232,7 +228,8 @@
 		162F28F219FDDE8D0043C638 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				162F291119FDF4B90043C638 /* Base */,
+				162F291219FDF4DA0043C638 /* BasePresenter.h */,
+				162F291319FDF4DA0043C638 /* BasePresenter.m */,
 				162F291519FDF6890043C638 /* InitializationPresenter.h */,
 				162F291619FDF6890043C638 /* InitializationPresenter.m */,
 				164DD3ED1A00971F005DD629 /* CommunicatePresenter.h */,
@@ -250,15 +247,6 @@
 			name = Interactors;
 			sourceTree = "<group>";
 		};
-		162F28F719FDDFEF0043C638 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				162F28F819FDE3190043C638 /* BaseViewController.h */,
-				162F28F919FDE3190043C638 /* BaseViewController.m */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
 		162F290719FDE9FB0043C638 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,15 +254,6 @@
 				162F290919FDEA160043C638 /* NSString+Utility.m */,
 			);
 			name = Utilities;
-			sourceTree = "<group>";
-		};
-		162F291119FDF4B90043C638 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				162F291219FDF4DA0043C638 /* BasePresenter.h */,
-				162F291319FDF4DA0043C638 /* BasePresenter.m */,
-			);
-			name = Base;
 			sourceTree = "<group>";
 		};
 		16EECE9D1A73800600CC90A4 /* Documents */ = {
@@ -390,14 +369,13 @@
 				162F28FA19FDE3190043C638 /* BaseViewController.m in Sources */,
 				162F28CF19FDDD780043C638 /* HomeViewController.m in Sources */,
 				164DD3EC1A009465005DD629 /* SiriInteractor.m in Sources */,
-				162F291019FDF2570043C638 /* UIViewController+Demo.m in Sources */,
 				162F290319FDE4EC0043C638 /* AssemblingFactory.m in Sources */,
 				16EECE9C1A737C5200CC90A4 /* README.md in Sources */,
 				162F291419FDF4DA0043C638 /* BasePresenter.m in Sources */,
-				162F290619FDE5880043C638 /* UIStoryboard+Demo.m in Sources */,
 				162F291719FDF6890043C638 /* InitializationPresenter.m in Sources */,
 				162F28CC19FDDD780043C638 /* AppDelegate.m in Sources */,
 				162F28C919FDDD780043C638 /* main.m in Sources */,
+				16E421D41A92CF2A00621970 /* Config.m in Sources */,
 				162F290019FDE4720043C638 /* PageMessenger.m in Sources */,
 				162F290A19FDEA160043C638 /* NSString+Utility.m in Sources */,
 				162F28FD19FDE3FD0043C638 /* SplashViewController.m in Sources */,

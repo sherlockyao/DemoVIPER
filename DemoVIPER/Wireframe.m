@@ -7,10 +7,30 @@
 //
 
 #import "Wireframe.h"
+#import "Config.h"
 #import "AssemblingFactory.h"
-#import "NSString+Utility.h"
-#import "UIViewController+Demo.h"
 #import "SplashViewController.h"
+#import "NSString+Utility.h"
+#import <UIKit/UIKit.h>
+
+/**
+ * UIViewController Category
+ **/
+@interface UIViewController (Demo)
+
++ (NSString *)wireframeKey:(NSString *)name;
+
+@end
+
+@implementation UIViewController (Demo)
+
++ (NSString *)wireframeKey:(NSString *)name {
+  return [[[self class] description] conj:name];
+}
+
+@end
+
+
 
 /**
  * Wireframe handles all the navigation between controllers, and passing parameters.
@@ -51,7 +71,7 @@
   static NSDictionary *selectorMap = nil;
   if (!selectorMap) {
     selectorMap = @{
-                    [SplashViewController wireframeKey:[PageMessenger defaultName]] : [NSValue valueWithPointer:@selector(moveToHomeViewController:params:)]
+                    [SplashViewController wireframeKey:PageMessengerNameDefault] : [NSValue valueWithPointer:@selector(moveToHomeViewController:params:)]
                     };
   }
   NSValue *value = [selectorMap valueForKey:[[class description] conj:messengerName]];

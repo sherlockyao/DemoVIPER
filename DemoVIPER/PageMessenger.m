@@ -7,12 +7,11 @@
 //
 
 #import "PageMessenger.h"
-
-static NSString *const DefaultName = @"Default";
+#import "Config.h"
 
 @interface PageMessenger ()
 
-@property (nonatomic, strong) NSString *theName;
+@property (readwrite, nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSMutableDictionary *parameters;
 
 @end
@@ -22,35 +21,28 @@ static NSString *const DefaultName = @"Default";
 - (id)init {
   self = [super init];
   if (self) {
+    _name = PageMessengerNameDefault;
     _parameters = [NSMutableDictionary dictionary];
   }
   return self;
 }
 
 + (instancetype)messenger {
-  return [self messengerWithName:DefaultName];
+  return [PageMessenger new];
 }
 
 + (instancetype)messengerWithName:(NSString *)name {
   PageMessenger *messenger = [PageMessenger new];
-  messenger.theName = name;
+  messenger.name = name;
   return messenger;
-}
-
-+ (NSString *)defaultName {
-  return DefaultName;
-}
-
-- (void)addParam:(NSString *)name value:(id)value {
-  [self.parameters setValue:value forKeyPath:name];
-}
-
-- (NSString *)name {
-  return self.theName ? self.theName : DefaultName;
 }
 
 - (NSDictionary *)params {
   return [NSDictionary dictionaryWithDictionary:self.parameters];
+}
+
+- (void)addParam:(NSString *)name value:(id)value {
+  [self.parameters setValue:value forKeyPath:name];
 }
 
 @end
