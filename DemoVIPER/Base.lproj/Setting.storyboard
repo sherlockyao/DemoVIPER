@@ -3,5 +3,81 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Setting View Controller-->
+        <scene sceneID="gzm-72-P5t">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewController" id="kbQ-qo-rAZ" customClass="SettingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uoS-Vg-yAq"/>
+                        <viewControllerLayoutGuide type="bottom" id="8L5-u0-3Kb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3VH-Cj-0WD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hiU-ST-9q5" userLabel="Colors Table View">
+                                <rect key="frame" x="0.0" y="76" width="600" height="524"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34L-PJ-Tnj" userLabel="Navigation Bar View">
+                                <rect key="frame" x="0.0" y="20" width="600" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.56999999999999995" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKy-Gs-p4X" userLabel="Back Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="56" id="6oi-Ox-xSz"/>
+                                        </constraints>
+                                        <state key="normal" image="nav_icon_back">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButtonTouchUpInside:" destination="kbQ-qo-rAZ" eventType="touchUpInside" id="kct-9N-W5u"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Theme Setting" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vv0-QH-5jr" userLabel="Title Label">
+                                        <rect key="frame" x="72" y="13" width="528" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="NL4-lb-nnp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Vv0-QH-5jr" firstAttribute="leading" secondItem="YKy-Gs-p4X" secondAttribute="trailing" constant="16" id="Jui-Vy-9m2"/>
+                                    <constraint firstAttribute="height" constant="56" id="Lte-1f-VzX"/>
+                                    <constraint firstItem="YKy-Gs-p4X" firstAttribute="top" secondItem="34L-PJ-Tnj" secondAttribute="top" id="NNh-NO-AtZ"/>
+                                    <constraint firstItem="YKy-Gs-p4X" firstAttribute="leading" secondItem="34L-PJ-Tnj" secondAttribute="leading" id="bn2-Sy-PsZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="YKy-Gs-p4X" secondAttribute="bottom" id="dwS-m9-TBq"/>
+                                    <constraint firstAttribute="centerY" secondItem="Vv0-QH-5jr" secondAttribute="centerY" id="q1u-U0-XuL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vv0-QH-5jr" secondAttribute="trailing" id="sAl-Lv-sTh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hiU-ST-9q5" secondAttribute="trailing" id="2pP-f2-fKF"/>
+                            <constraint firstAttribute="trailing" secondItem="34L-PJ-Tnj" secondAttribute="trailing" id="DXg-f8-YLj"/>
+                            <constraint firstItem="hiU-ST-9q5" firstAttribute="top" secondItem="34L-PJ-Tnj" secondAttribute="bottom" id="DwC-aF-428"/>
+                            <constraint firstItem="hiU-ST-9q5" firstAttribute="leading" secondItem="3VH-Cj-0WD" secondAttribute="leading" id="UZX-jR-Gle"/>
+                            <constraint firstItem="34L-PJ-Tnj" firstAttribute="top" secondItem="3VH-Cj-0WD" secondAttribute="top" constant="20" id="hpO-2k-ARR"/>
+                            <constraint firstItem="34L-PJ-Tnj" firstAttribute="leading" secondItem="3VH-Cj-0WD" secondAttribute="leading" id="qAL-eE-kB7"/>
+                            <constraint firstItem="8L5-u0-3Kb" firstAttribute="top" secondItem="hiU-ST-9q5" secondAttribute="bottom" id="uO9-He-M5q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorsTableView" destination="hiU-ST-9q5" id="bYt-Xk-RII"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vQO-vG-Oef" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="90"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nav_icon_back" width="25" height="25"/>
+    </resources>
 </document>

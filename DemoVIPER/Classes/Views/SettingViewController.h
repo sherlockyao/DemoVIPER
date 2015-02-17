@@ -10,4 +10,6 @@
 
 @interface SettingViewController : BaseViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *colorsTableView;
+
 @end

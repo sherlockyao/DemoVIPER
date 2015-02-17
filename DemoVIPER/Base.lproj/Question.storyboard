@@ -168,9 +168,12 @@
                                             <action selector="backButtonTouchUpInside:" destination="fC8-ce-3MG" eventType="touchUpInside" id="nPz-E3-vkq"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question History" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmQ-O3-U1H" userLabel="Title Label">
-                                        <rect key="frame" x="64" y="13" width="536" height="30"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question History" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmQ-O3-U1H" userLabel="Title Label">
+                                        <rect key="frame" x="72" y="13" width="528" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="XSl-iF-W2r"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -178,8 +181,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="5Ew-0b-hbU"/>
+                                    <constraint firstItem="vmQ-O3-U1H" firstAttribute="leading" secondItem="woQ-n3-313" secondAttribute="trailing" constant="16" id="SND-A6-LY4"/>
                                     <constraint firstAttribute="bottom" secondItem="woQ-n3-313" secondAttribute="bottom" id="Wee-Kw-Mqa"/>
                                     <constraint firstItem="woQ-n3-313" firstAttribute="top" secondItem="eW1-FR-IYp" secondAttribute="top" id="cLO-iP-8d6"/>
+                                    <constraint firstAttribute="centerY" secondItem="vmQ-O3-U1H" secondAttribute="centerY" id="crh-wZ-tvb"/>
+                                    <constraint firstAttribute="trailing" secondItem="vmQ-O3-U1H" secondAttribute="trailing" id="hrs-Gi-SM4"/>
                                     <constraint firstItem="woQ-n3-313" firstAttribute="leading" secondItem="eW1-FR-IYp" secondAttribute="leading" id="xws-44-9Et"/>
                                 </constraints>
                             </view>
