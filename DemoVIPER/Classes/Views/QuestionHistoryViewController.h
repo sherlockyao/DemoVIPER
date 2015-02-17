@@ -10,4 +10,6 @@
 
 @interface QuestionHistoryViewController : BaseViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *questionsTableView;
+
 @end

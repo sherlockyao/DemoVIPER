@@ -148,8 +148,56 @@
                     <view key="view" contentMode="scaleToFill" id="AVn-Zu-aYn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TrW-ny-Lck" userLabel="Questions Table View">
+                                <rect key="frame" x="0.0" y="76" width="600" height="524"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eW1-FR-IYp" userLabel="Navigation Bar View">
+                                <rect key="frame" x="0.0" y="20" width="600" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.56999999999999995" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woQ-n3-313" userLabel="Back Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="56" id="Ev4-I1-PgC"/>
+                                        </constraints>
+                                        <state key="normal" image="nav_icon_back">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButtonTouchUpInside:" destination="fC8-ce-3MG" eventType="touchUpInside" id="nPz-E3-vkq"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question History" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmQ-O3-U1H" userLabel="Title Label">
+                                        <rect key="frame" x="64" y="13" width="536" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="5Ew-0b-hbU"/>
+                                    <constraint firstAttribute="bottom" secondItem="woQ-n3-313" secondAttribute="bottom" id="Wee-Kw-Mqa"/>
+                                    <constraint firstItem="woQ-n3-313" firstAttribute="top" secondItem="eW1-FR-IYp" secondAttribute="top" id="cLO-iP-8d6"/>
+                                    <constraint firstItem="woQ-n3-313" firstAttribute="leading" secondItem="eW1-FR-IYp" secondAttribute="leading" id="xws-44-9Et"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eW1-FR-IYp" secondAttribute="trailing" id="0aF-Vn-HOx"/>
+                            <constraint firstAttribute="trailing" secondItem="TrW-ny-Lck" secondAttribute="trailing" id="LY3-UU-eDY"/>
+                            <constraint firstAttribute="bottom" secondItem="TrW-ny-Lck" secondAttribute="bottom" id="PqE-eg-ln6"/>
+                            <constraint firstItem="eW1-FR-IYp" firstAttribute="top" secondItem="AVn-Zu-aYn" secondAttribute="top" constant="20" id="U4b-KA-s0w"/>
+                            <constraint firstItem="TrW-ny-Lck" firstAttribute="leading" secondItem="AVn-Zu-aYn" secondAttribute="leading" id="UwC-ak-0gU"/>
+                            <constraint firstItem="eW1-FR-IYp" firstAttribute="leading" secondItem="AVn-Zu-aYn" secondAttribute="leading" id="qUt-NJ-D8f"/>
+                            <constraint firstItem="TrW-ny-Lck" firstAttribute="top" secondItem="eW1-FR-IYp" secondAttribute="bottom" id="seT-fl-kGI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="questionsTableView" destination="TrW-ny-Lck" id="oK2-nw-Dia"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZv-xL-j9H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,6 +205,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="nav_icon_back" width="25" height="25"/>
         <image name="nav_icon_history" width="24" height="24"/>
         <image name="nav_icon_menu" width="24" height="24"/>
     </resources>
