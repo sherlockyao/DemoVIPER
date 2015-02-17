@@ -27,6 +27,9 @@
 		16E422021A92DC4600621970 /* SiriInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E422011A92DC4600621970 /* SiriInteractor.m */; };
 		16E422051A92DC5500621970 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E422041A92DC5500621970 /* NSString+Utility.m */; };
 		16E422081A92DC6900621970 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E422071A92DC6900621970 /* Config.m */; };
+		16E4220B1A92DE5D00621970 /* AskQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E4220A1A92DE5D00621970 /* AskQuestionViewController.m */; };
+		16E4220E1A92DE7300621970 /* QuestionHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E4220D1A92DE7300621970 /* QuestionHistoryViewController.m */; };
+		16E422111A92DE8300621970 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E422101A92DE8300621970 /* SettingViewController.m */; };
 		16EECE9C1A737C5200CC90A4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 16EECE9B1A737C5200CC90A4 /* README.md */; };
 		16EECE9F1A73884600CC90A4 /* RoutingSequence.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE9E1A73884600CC90A4 /* RoutingSequence.png */; };
 /* End PBXBuildFile section */
@@ -81,6 +84,12 @@
 		16E422041A92DC5500621970 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Utility.m"; path = "Classes/Utilities/NSString+Utility.m"; sourceTree = "<group>"; };
 		16E422061A92DC6900621970 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = Classes/Config.h; sourceTree = "<group>"; };
 		16E422071A92DC6900621970 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Config.m; path = Classes/Config.m; sourceTree = "<group>"; };
+		16E422091A92DE5D00621970 /* AskQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AskQuestionViewController.h; path = Classes/Views/AskQuestionViewController.h; sourceTree = "<group>"; };
+		16E4220A1A92DE5D00621970 /* AskQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AskQuestionViewController.m; path = Classes/Views/AskQuestionViewController.m; sourceTree = "<group>"; };
+		16E4220C1A92DE7300621970 /* QuestionHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionHistoryViewController.h; path = Classes/Views/QuestionHistoryViewController.h; sourceTree = "<group>"; };
+		16E4220D1A92DE7300621970 /* QuestionHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionHistoryViewController.m; path = Classes/Views/QuestionHistoryViewController.m; sourceTree = "<group>"; };
+		16E4220F1A92DE8300621970 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingViewController.h; path = Classes/Views/SettingViewController.h; sourceTree = "<group>"; };
+		16E422101A92DE8300621970 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingViewController.m; path = Classes/Views/SettingViewController.m; sourceTree = "<group>"; };
 		16EECE9B1A737C5200CC90A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		16EECE9E1A73884600CC90A4 /* RoutingSequence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RoutingSequence.png; path = Documents/RoutingSequence.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,7 +188,6 @@
 		162F28ED19FDDDED0043C638 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				162F28EE19FDDDF90043C638 /* Storyboards */,
 				162F28D319FDDD780043C638 /* Images.xcassets */,
 				162F28D519FDDD780043C638 /* LaunchScreen.xib */,
 			);
@@ -199,12 +207,12 @@
 		162F28EF19FDDE580043C638 /* Routing */ = {
 			isa = PBXGroup;
 			children = (
+				16E421E71A92DC0400621970 /* Wireframe.h */,
+				16E421E81A92DC0400621970 /* Wireframe.m */,
 				16E421E31A92DC0400621970 /* AssemblingFactory.h */,
 				16E421E41A92DC0400621970 /* AssemblingFactory.m */,
 				16E421E51A92DC0400621970 /* PageMessenger.h */,
 				16E421E61A92DC0400621970 /* PageMessenger.m */,
-				16E421E71A92DC0400621970 /* Wireframe.h */,
-				16E421E81A92DC0400621970 /* Wireframe.m */,
 			);
 			name = Routing;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 				16E421EF1A92DC1400621970 /* HomeViewController.m */,
 				16E421F01A92DC1400621970 /* SplashViewController.h */,
 				16E421F11A92DC1400621970 /* SplashViewController.m */,
+				162F28EE19FDDDF90043C638 /* Storyboards */,
 				16E421D51A92D82900621970 /* Menu Panel */,
 				16E421D61A92D83400621970 /* Ask Question Screen */,
 				16E421DC1A92DA9B00621970 /* Question History Screen */,
@@ -276,6 +285,8 @@
 		16E421D61A92D83400621970 /* Ask Question Screen */ = {
 			isa = PBXGroup;
 			children = (
+				16E422091A92DE5D00621970 /* AskQuestionViewController.h */,
+				16E4220A1A92DE5D00621970 /* AskQuestionViewController.m */,
 			);
 			name = "Ask Question Screen";
 			sourceTree = "<group>";
@@ -283,6 +294,8 @@
 		16E421D71A92D84400621970 /* Setting Screen */ = {
 			isa = PBXGroup;
 			children = (
+				16E4220F1A92DE8300621970 /* SettingViewController.h */,
+				16E422101A92DE8300621970 /* SettingViewController.m */,
 			);
 			name = "Setting Screen";
 			sourceTree = "<group>";
@@ -290,6 +303,8 @@
 		16E421DC1A92DA9B00621970 /* Question History Screen */ = {
 			isa = PBXGroup;
 			children = (
+				16E4220C1A92DE7300621970 /* QuestionHistoryViewController.h */,
+				16E4220D1A92DE7300621970 /* QuestionHistoryViewController.m */,
 			);
 			name = "Question History Screen";
 			sourceTree = "<group>";
@@ -410,6 +425,7 @@
 				16E421FF1A92DC3200621970 /* InitializationPresenter.m in Sources */,
 				16EECE9C1A737C5200CC90A4 /* README.md in Sources */,
 				16E421F41A92DC1400621970 /* SplashViewController.m in Sources */,
+				16E422111A92DE8300621970 /* SettingViewController.m in Sources */,
 				16E421F31A92DC1400621970 /* HomeViewController.m in Sources */,
 				16E421FE1A92DC3200621970 /* CommunicatePresenter.m in Sources */,
 				162F28CC19FDDD780043C638 /* AppDelegate.m in Sources */,
@@ -417,6 +433,8 @@
 				16E421F21A92DC1400621970 /* BaseViewController.m in Sources */,
 				16E422081A92DC6900621970 /* Config.m in Sources */,
 				16E421EB1A92DC0400621970 /* Wireframe.m in Sources */,
+				16E4220E1A92DE7300621970 /* QuestionHistoryViewController.m in Sources */,
+				16E4220B1A92DE5D00621970 /* AskQuestionViewController.m in Sources */,
 				16E421EA1A92DC0400621970 /* PageMessenger.m in Sources */,
 				16E422051A92DC5500621970 /* NSString+Utility.m in Sources */,
 				16E422021A92DC4600621970 /* SiriInteractor.m in Sources */,
