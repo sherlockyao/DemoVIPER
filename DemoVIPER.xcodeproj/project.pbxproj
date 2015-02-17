@@ -25,6 +25,8 @@
 		164DD3EC1A009465005DD629 /* SiriInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 164DD3EB1A009465005DD629 /* SiriInteractor.m */; };
 		164DD3EF1A00971F005DD629 /* CommunicatePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 164DD3EE1A00971F005DD629 /* CommunicatePresenter.m */; };
 		16E421D41A92CF2A00621970 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421D31A92CF2A00621970 /* Config.m */; };
+		16E421DD1A92DACC00621970 /* Question.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421DF1A92DACC00621970 /* Question.storyboard */; };
+		16E421E01A92DAD100621970 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421E21A92DAD100621970 /* Setting.storyboard */; };
 		16EECE9C1A737C5200CC90A4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 16EECE9B1A737C5200CC90A4 /* README.md */; };
 		16EECE9F1A73884600CC90A4 /* RoutingSequence.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE9E1A73884600CC90A4 /* RoutingSequence.png */; };
 /* End PBXBuildFile section */
@@ -77,6 +79,8 @@
 		164DD3F01A00975E005DD629 /* MessageBoardViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageBoardViewInterface.h; sourceTree = "<group>"; };
 		16E421D21A92CF2A00621970 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		16E421D31A92CF2A00621970 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		16E421DE1A92DACC00621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Question.storyboard; sourceTree = "<group>"; };
+		16E421E11A92DAD100621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
 		16EECE9B1A737C5200CC90A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		16EECE9E1A73884600CC90A4 /* RoutingSequence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RoutingSequence.png; path = Documents/RoutingSequence.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				162F28D019FDDD780043C638 /* Main.storyboard */,
+				16E421DF1A92DACC00621970 /* Question.storyboard */,
+				16E421E21A92DAD100621970 /* Setting.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -208,6 +214,10 @@
 			children = (
 				162F28F819FDE3190043C638 /* BaseViewController.h */,
 				162F28F919FDE3190043C638 /* BaseViewController.m */,
+				16E421D51A92D82900621970 /* Menu Panel */,
+				16E421D61A92D83400621970 /* Ask Question Screen */,
+				16E421DC1A92DA9B00621970 /* Question History Screen */,
+				16E421D71A92D84400621970 /* Setting Screen */,
 				162F28FB19FDE3FD0043C638 /* SplashViewController.h */,
 				162F28FC19FDE3FD0043C638 /* SplashViewController.m */,
 				162F28CD19FDDD780043C638 /* HomeViewController.h */,
@@ -254,6 +264,34 @@
 				162F290919FDEA160043C638 /* NSString+Utility.m */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		16E421D51A92D82900621970 /* Menu Panel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Menu Panel";
+			sourceTree = "<group>";
+		};
+		16E421D61A92D83400621970 /* Ask Question Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Ask Question Screen";
+			sourceTree = "<group>";
+		};
+		16E421D71A92D84400621970 /* Setting Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Setting Screen";
+			sourceTree = "<group>";
+		};
+		16E421DC1A92DA9B00621970 /* Question History Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Question History Screen";
 			sourceTree = "<group>";
 		};
 		16EECE9D1A73800600CC90A4 /* Documents */ = {
@@ -346,6 +384,8 @@
 			files = (
 				162F28D219FDDD780043C638 /* Main.storyboard in Resources */,
 				162F28D719FDDD780043C638 /* LaunchScreen.xib in Resources */,
+				16E421DD1A92DACC00621970 /* Question.storyboard in Resources */,
+				16E421E01A92DAD100621970 /* Setting.storyboard in Resources */,
 				162F28D419FDDD780043C638 /* Images.xcassets in Resources */,
 				16EECE9F1A73884600CC90A4 /* RoutingSequence.png in Resources */,
 			);
@@ -416,6 +456,22 @@
 				162F28D619FDDD780043C638 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		16E421DF1A92DACC00621970 /* Question.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16E421DE1A92DACC00621970 /* Base */,
+			);
+			name = Question.storyboard;
+			sourceTree = "<group>";
+		};
+		16E421E21A92DAD100621970 /* Setting.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16E421E11A92DAD100621970 /* Base */,
+			);
+			name = Setting.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
