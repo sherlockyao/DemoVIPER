@@ -1,9 +1,9 @@
 //
 //  AppDelegate.h
-//  PhotoNotes
+//  DemoVIPER
 //
-//  Created by jackjiang on 11/11/14.
-//  Copyright (c) 2014 Vibin. All rights reserved.
+//  Created by Sherlock on 10/27/14.
+//  Copyright (c) 2014 originate. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
