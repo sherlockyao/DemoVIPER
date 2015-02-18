@@ -57,7 +57,8 @@ static NSString *const SettingStoryboardName = @"Setting";
 + (BaseViewController *)assembleAskQuestionScreen {
   AskQuestionViewController *viewController = [[UIStoryboard questionStoryboard] instantiateViewControllerWithIdentifier:AskQuestionScreenIdentifier];
   
-  viewController.navigationPresenter = [NavigationPresenter new];
+  viewController.navigationPresenter = [self buildNavigationPresenter];
+  viewController.askQuestionPanelPresenter = [self buildAskQuestionPanelPresenter];
   
   return viewController;
 }
@@ -65,7 +66,7 @@ static NSString *const SettingStoryboardName = @"Setting";
 + (BaseViewController *)assembleQuestionHistoryScreen {
   QuestionHistoryViewController *viewController = [[UIStoryboard questionStoryboard] instantiateViewControllerWithIdentifier:QuestionHistoryScreenIdentifier];
   
-  viewController.navigationPresenter = [NavigationPresenter new];
+  viewController.navigationPresenter = [self buildNavigationPresenter];
 
   return viewController;
 }
@@ -73,10 +74,25 @@ static NSString *const SettingStoryboardName = @"Setting";
 + (BaseViewController *)assembleSettingScreen {
   SettingViewController *viewController = [[UIStoryboard settingStoryboard] instantiateViewControllerWithIdentifier:SettingScreenIdentifier];
   
-  viewController.navigationPresenter = [NavigationPresenter new];
+  viewController.navigationPresenter = [self buildNavigationPresenter];
   
   return viewController;
 
+}
+
+#pragma mark - Assembling Presenters
+
++ (NavigationPresenter *)buildNavigationPresenter {
+  return [NavigationPresenter new];
+}
+
++ (AskQuestionPanelPresenter *)buildAskQuestionPanelPresenter {
+  AskQuestionPanelPresenter *presenter = [AskQuestionPanelPresenter new];
+  
+  presenter.candidateQuestionCount = 5;
+  presenter.questionRobotInteractor = [QuestionRobotInteractor new];
+  
+  return presenter;
 }
 
 @end

@@ -16,9 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nVH-80-cyP" userLabel="Questions Table View">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="36" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nVH-80-cyP" userLabel="Questions Table View">
                                 <rect key="frame" x="0.0" y="76" width="600" height="524"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QuestionCell" textLabel="vRV-Md-grI" style="IBUITableViewCellStyleDefault" id="Syy-ak-nu9">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Syy-ak-nu9" id="8rb-za-HbN">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vRV-Md-grI">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" red="0.32156862745098042" green="0.32156862745098042" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="highlightedColor" red="0.0" green="0.73333333329999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQi-4K-8F1" userLabel="Answer Board View">
                                 <rect key="frame" x="0.0" y="76" width="600" height="524"/>
@@ -64,6 +80,13 @@
                                             <action selector="menuButtonTouchUpInside:" destination="goG-yn-UEE" eventType="touchUpInside" id="2Jt-xP-6MP"/>
                                         </connections>
                                     </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Whh-tD-Yhw" userLabel="Activity Indicator">
+                                        <rect key="frame" x="56" y="18" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Hbt-zn-OmA"/>
+                                            <constraint firstAttribute="height" constant="20" id="XbL-SC-TCY"/>
+                                        </constraints>
+                                    </activityIndicatorView>
                                     <button opaque="NO" alpha="0.56999999999999995" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3d-b3-V1r" userLabel="History Button">
                                         <rect key="frame" x="544" y="0.0" width="56" height="56"/>
                                         <constraints>
@@ -76,26 +99,28 @@
                                             <action selector="historyButtonTouchUpInside:" destination="goG-yn-UEE" eventType="touchUpInside" id="jjN-8v-Bj8"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your question" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CYy-gN-H84">
-                                        <rect key="frame" x="72" y="13" width="456" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your question" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CYy-gN-H84">
+                                        <rect key="frame" x="82" y="13" width="446" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="ZOw-DF-Dsn"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="go"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Q1g-g1-irI" firstAttribute="top" secondItem="kvE-ST-FPf" secondAttribute="top" id="5W4-4P-AV1"/>
+                                    <constraint firstItem="Whh-tD-Yhw" firstAttribute="leading" secondItem="Q1g-g1-irI" secondAttribute="trailing" id="7Xh-lD-NIH"/>
                                     <constraint firstAttribute="centerY" secondItem="CYy-gN-H84" secondAttribute="centerY" id="Bzb-iI-4vb"/>
                                     <constraint firstItem="Q1g-g1-irI" firstAttribute="leading" secondItem="kvE-ST-FPf" secondAttribute="leading" id="Jyf-Vu-rmE"/>
-                                    <constraint firstItem="CYy-gN-H84" firstAttribute="leading" secondItem="Q1g-g1-irI" secondAttribute="trailing" constant="16" id="NXy-gw-eeu"/>
                                     <constraint firstAttribute="bottom" secondItem="n3d-b3-V1r" secondAttribute="bottom" id="Ue5-NR-Wie"/>
+                                    <constraint firstAttribute="centerY" secondItem="Whh-tD-Yhw" secondAttribute="centerY" id="Ui7-lX-vf5"/>
                                     <constraint firstAttribute="trailing" secondItem="n3d-b3-V1r" secondAttribute="trailing" id="d6r-cO-EXs"/>
                                     <constraint firstAttribute="bottom" secondItem="Q1g-g1-irI" secondAttribute="bottom" id="eIu-Rx-dsy"/>
                                     <constraint firstItem="n3d-b3-V1r" firstAttribute="top" secondItem="kvE-ST-FPf" secondAttribute="top" id="oIn-Y2-syO"/>
                                     <constraint firstAttribute="height" constant="56" id="x2X-2L-q4a"/>
+                                    <constraint firstItem="CYy-gN-H84" firstAttribute="leading" secondItem="Whh-tD-Yhw" secondAttribute="trailing" constant="6" id="ykr-6f-w1L"/>
                                     <constraint firstItem="n3d-b3-V1r" firstAttribute="leading" secondItem="CYy-gN-H84" secondAttribute="trailing" constant="16" id="zFf-UF-gGO"/>
                                 </constraints>
                             </view>
@@ -126,6 +151,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="Whh-tD-Yhw" id="Gh9-J5-IZ2"/>
                         <outlet property="answerBoardView" destination="IQi-4K-8F1" id="V5f-b8-UzC"/>
                         <outlet property="answerLabel" destination="rVb-7T-RXv" id="er0-NP-fiM"/>
                         <outlet property="emojiImageView" destination="Pme-oa-xCa" id="p2f-56-myv"/>

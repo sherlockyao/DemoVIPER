@@ -9,6 +9,8 @@
 #import "AskQuestionViewController.h"
 #import "NSArray+Utility.h"
 
+static NSString *const QuestionCellReuseIdentifier = @"QuestionCell";
+
 @interface AskQuestionViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, QuestionListInterface, AnswerBoardInterface, ProgressHudInterface>
 
 @property (nonatomic, strong) NSArray *questions;
@@ -35,6 +37,16 @@
   // text field
   self.questionTextField.delegate = self;
   [self.questionTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+  
+  // table view
+  self.questionsTableView.delegate = self;
+  self.questionsTableView.dataSource = self;
+  [self.questionsTableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]]; // remove extra lines
+  
+  // wire up interfaces
+  self.askQuestionPanelPresenter.questionList = self;
+  self.askQuestionPanelPresenter.answerBoard = self;
+  self.askQuestionPanelPresenter.progresshud = self;
 }
 
 #pragma mark - IB Actions
@@ -54,16 +66,20 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-  //TODO:
+  UITableViewCell *questionCell = [tableView dequeueReusableCellWithIdentifier:QuestionCellReuseIdentifier forIndexPath:indexPath];
+  QuestionInfo *question = self.questions[indexPath.row];
+  questionCell.textLabel.text = question.content;
   
-  return nil;
+  return questionCell;
 }
 
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
   [self hideKeyboardIfNeeded];
-  //TODO: ask selected question
+  QuestionInfo *question = self.questions[indexPath.row];
+  self.questionTextField.text = question.content;
+  [self.askQuestionPanelPresenter askQuestion:question];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
@@ -74,11 +90,15 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
   [textField resignFirstResponder];
+  QuestionInfo *question = [QuestionInfo new];
+  question.content = textField.text;
+  [self.askQuestionPanelPresenter askQuestion:question];
   return NO;
 }
 
 - (void)textFieldDidChange:(id)sender {
-  //TODO:
+  self.answerBoardView.hidden = YES;
+  [self.askQuestionPanelPresenter enteringQuestionText:self.questionTextField.text];
 }
 
 #pragma mark - QuestionListInterface
@@ -99,11 +119,17 @@
 #pragma mark - ProgressHudInterface
 
 - (void)beginProgress {
-  //TODO:
+  [self.activityIndicatorView startAnimating];
+  self.activityIndicatorView.hidden = NO;
+  self.questionTextField.userInteractionEnabled = NO;
+  self.questionsTableView.userInteractionEnabled = NO;
 }
 
 - (void)endProgress {
-  //TODO:
+  [self.activityIndicatorView stopAnimating];
+  self.activityIndicatorView.hidden = YES;
+  self.questionTextField.userInteractionEnabled = YES;
+  self.questionsTableView.userInteractionEnabled = YES;
 }
 
 #pragma mark - Helper Methods

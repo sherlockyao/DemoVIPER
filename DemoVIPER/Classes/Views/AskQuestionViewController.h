@@ -11,9 +11,9 @@
 
 @interface AskQuestionViewController : BaseViewController
 
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 @property (weak, nonatomic) IBOutlet UITextField *questionTextField;
 @property (weak, nonatomic) IBOutlet UITableView *questionsTableView;
-
 @property (weak, nonatomic) IBOutlet UIView *answerBoardView;
 @property (weak, nonatomic) IBOutlet UIImageView *emojiImageView;
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
