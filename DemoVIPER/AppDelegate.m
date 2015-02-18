@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Wireframe.h"
+#import "CoreData+MagicalRecord.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  [MagicalRecord setShouldDeleteStoreOnModelMismatch:YES];
+  [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"Viper.sqlite"];
+  
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   [self.window setRootViewController:[Wireframe entryScreen]];
   [self.window makeKeyAndVisible];
@@ -43,7 +47,7 @@
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-  // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+  [MagicalRecord cleanUp];
 }
 
 @end

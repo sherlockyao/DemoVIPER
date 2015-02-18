@@ -57,6 +57,14 @@
 		16EC62A41A942E640016DA24 /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EC62831A942E640016DA24 /* MagicalRecord+Setup.m */; };
 		16EC62A51A942E640016DA24 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EC62851A942E640016DA24 /* MagicalRecord+ShorthandSupport.m */; };
 		16EC62A61A942E640016DA24 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EC62871A942E640016DA24 /* MagicalRecord.m */; };
+		16EC62AA1A9432F60016DA24 /* AskQuestionPanelPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EC62A91A9432F60016DA24 /* AskQuestionPanelPresenter.m */; };
+		16EC62AF1A9434080016DA24 /* AnswerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EC62AE1A9434080016DA24 /* AnswerInfo.m */; };
+		16EC62B31A9437B50016DA24 /* QuestionRobotInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EC62B21A9437B50016DA24 /* QuestionRobotInteractor.m */; };
+		16EC62B71A9438590016DA24 /* Question+DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EC62B61A9438590016DA24 /* Question+DataManager.m */; };
+		16EC62BB1A943EF50016DA24 /* Question+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EC62BA1A943EF50016DA24 /* Question+Utility.m */; };
+		16EC62BE1A943F080016DA24 /* QuestionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EC62BD1A943F080016DA24 /* QuestionInfo.m */; };
+		16EC62C11A94438C0016DA24 /* Answer+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EC62C01A94438C0016DA24 /* Answer+Utility.m */; };
+		16EC62C41A9445550016DA24 /* NSArray+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EC62C31A9445550016DA24 /* NSArray+Utility.m */; };
 		16EECE9C1A737C5200CC90A4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 16EECE9B1A737C5200CC90A4 /* README.md */; };
 		16EECE9F1A73884600CC90A4 /* RoutingSequence.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EECE9E1A73884600CC90A4 /* RoutingSequence.png */; };
 /* End PBXBuildFile section */
@@ -172,6 +180,25 @@
 		16EC62891A942E640016DA24 /* MagicalRecordLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordLogging.h; sourceTree = "<group>"; };
 		16EC628A1A942E640016DA24 /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		16EC628B1A942E640016DA24 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
+		16EC62A71A9430AE0016DA24 /* QuestionListInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionListInterface.h; path = Classes/ViewInterfaces/QuestionListInterface.h; sourceTree = "<group>"; };
+		16EC62A81A9432F60016DA24 /* AskQuestionPanelPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AskQuestionPanelPresenter.h; path = Classes/Presenters/AskQuestionPanelPresenter.h; sourceTree = "<group>"; };
+		16EC62A91A9432F60016DA24 /* AskQuestionPanelPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AskQuestionPanelPresenter.m; path = Classes/Presenters/AskQuestionPanelPresenter.m; sourceTree = "<group>"; };
+		16EC62AB1A9433820016DA24 /* AnswerBoardInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnswerBoardInterface.h; path = Classes/ViewInterfaces/AnswerBoardInterface.h; sourceTree = "<group>"; };
+		16EC62AD1A9434080016DA24 /* AnswerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnswerInfo.h; path = Classes/DTO/AnswerInfo.h; sourceTree = "<group>"; };
+		16EC62AE1A9434080016DA24 /* AnswerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnswerInfo.m; path = Classes/DTO/AnswerInfo.m; sourceTree = "<group>"; };
+		16EC62B01A9434F90016DA24 /* ProgressHudInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressHudInterface.h; path = Classes/ViewInterfaces/ProgressHudInterface.h; sourceTree = "<group>"; };
+		16EC62B11A9437B50016DA24 /* QuestionRobotInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionRobotInteractor.h; path = Classes/Interactors/QuestionRobotInteractor.h; sourceTree = "<group>"; };
+		16EC62B21A9437B50016DA24 /* QuestionRobotInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionRobotInteractor.m; path = Classes/Interactors/QuestionRobotInteractor.m; sourceTree = "<group>"; };
+		16EC62B51A9438590016DA24 /* Question+DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Question+DataManager.h"; path = "Classes/Models/Question+DataManager.h"; sourceTree = "<group>"; };
+		16EC62B61A9438590016DA24 /* Question+DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Question+DataManager.m"; path = "Classes/Models/Question+DataManager.m"; sourceTree = "<group>"; };
+		16EC62B91A943EF50016DA24 /* Question+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Question+Utility.h"; path = "Classes/Models/Question+Utility.h"; sourceTree = "<group>"; };
+		16EC62BA1A943EF50016DA24 /* Question+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Question+Utility.m"; path = "Classes/Models/Question+Utility.m"; sourceTree = "<group>"; };
+		16EC62BC1A943F080016DA24 /* QuestionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionInfo.h; path = Classes/DTO/QuestionInfo.h; sourceTree = "<group>"; };
+		16EC62BD1A943F080016DA24 /* QuestionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionInfo.m; path = Classes/DTO/QuestionInfo.m; sourceTree = "<group>"; };
+		16EC62BF1A94438C0016DA24 /* Answer+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Answer+Utility.h"; path = "Classes/Models/Answer+Utility.h"; sourceTree = "<group>"; };
+		16EC62C01A94438C0016DA24 /* Answer+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Answer+Utility.m"; path = "Classes/Models/Answer+Utility.m"; sourceTree = "<group>"; };
+		16EC62C21A9445550016DA24 /* NSArray+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Utility.h"; path = "Classes/Utilities/NSArray+Utility.h"; sourceTree = "<group>"; };
+		16EC62C31A9445550016DA24 /* NSArray+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Utility.m"; path = "Classes/Utilities/NSArray+Utility.m"; sourceTree = "<group>"; };
 		16EECE9B1A737C5200CC90A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		16EECE9E1A73884600CC90A4 /* RoutingSequence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RoutingSequence.png; path = Documents/RoutingSequence.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -262,6 +289,7 @@
 				162F28F119FDDE720043C638 /* View Interfaces */,
 				162F28F219FDDE8D0043C638 /* Presenters */,
 				162F28F319FDDE990043C638 /* Interactors */,
+				16EC62AC1A9433D60016DA24 /* DTO */,
 				16EC62401A942C1F0016DA24 /* Models */,
 				162F290719FDE9FB0043C638 /* Utilities */,
 				16EC624B1A942E3B0016DA24 /* Libraries */,
@@ -317,6 +345,9 @@
 		162F28F119FDDE720043C638 /* View Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				16EC62A71A9430AE0016DA24 /* QuestionListInterface.h */,
+				16EC62AB1A9433820016DA24 /* AnswerBoardInterface.h */,
+				16EC62B01A9434F90016DA24 /* ProgressHudInterface.h */,
 			);
 			name = "View Interfaces";
 			sourceTree = "<group>";
@@ -328,6 +359,8 @@
 				16E421F81A92DC3200621970 /* BasePresenter.m */,
 				16E422171A92F90200621970 /* NavigationPresenter.h */,
 				16E422181A92F90200621970 /* NavigationPresenter.m */,
+				16EC62A81A9432F60016DA24 /* AskQuestionPanelPresenter.h */,
+				16EC62A91A9432F60016DA24 /* AskQuestionPanelPresenter.m */,
 			);
 			name = Presenters;
 			sourceTree = "<group>";
@@ -335,6 +368,8 @@
 		162F28F319FDDE990043C638 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				16EC62B11A9437B50016DA24 /* QuestionRobotInteractor.h */,
+				16EC62B21A9437B50016DA24 /* QuestionRobotInteractor.m */,
 			);
 			name = Interactors;
 			sourceTree = "<group>";
@@ -344,6 +379,8 @@
 			children = (
 				16E422031A92DC5500621970 /* NSString+Utility.h */,
 				16E422041A92DC5500621970 /* NSString+Utility.m */,
+				16EC62C21A9445550016DA24 /* NSArray+Utility.h */,
+				16EC62C31A9445550016DA24 /* NSArray+Utility.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -390,6 +427,8 @@
 			children = (
 				16EC62411A942C850016DA24 /* Viper.xcdatamodeld */,
 				16EC62441A942DAC0016DA24 /* Managed Objects */,
+				16EC62B41A9438340016DA24 /* Data Manager */,
+				16EC62B81A943EE10016DA24 /* Utilities */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -519,6 +558,37 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		16EC62AC1A9433D60016DA24 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				16EC62AD1A9434080016DA24 /* AnswerInfo.h */,
+				16EC62AE1A9434080016DA24 /* AnswerInfo.m */,
+				16EC62BC1A943F080016DA24 /* QuestionInfo.h */,
+				16EC62BD1A943F080016DA24 /* QuestionInfo.m */,
+			);
+			name = DTO;
+			sourceTree = "<group>";
+		};
+		16EC62B41A9438340016DA24 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				16EC62B51A9438590016DA24 /* Question+DataManager.h */,
+				16EC62B61A9438590016DA24 /* Question+DataManager.m */,
+			);
+			name = "Data Manager";
+			sourceTree = "<group>";
+		};
+		16EC62B81A943EE10016DA24 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				16EC62B91A943EF50016DA24 /* Question+Utility.h */,
+				16EC62BA1A943EF50016DA24 /* Question+Utility.m */,
+				16EC62BF1A94438C0016DA24 /* Answer+Utility.h */,
+				16EC62C01A94438C0016DA24 /* Answer+Utility.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		16EECE9D1A73800600CC90A4 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
@@ -631,20 +701,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				16EC629C1A942E640016DA24 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				16EC62B71A9438590016DA24 /* Question+DataManager.m in Sources */,
 				16EC62431A942C850016DA24 /* Viper.xcdatamodeld in Sources */,
 				16E421FD1A92DC3200621970 /* BasePresenter.m in Sources */,
 				16E422191A92F90200621970 /* NavigationPresenter.m in Sources */,
 				16E421E91A92DC0400621970 /* AssemblingFactory.m in Sources */,
+				16EC62C11A94438C0016DA24 /* Answer+Utility.m in Sources */,
 				16EC629E1A942E640016DA24 /* NSPersistentStore+MagicalRecord.m in Sources */,
 				16EC62901A942E640016DA24 /* NSObject+MagicalDataImport.m in Sources */,
+				16EC62BB1A943EF50016DA24 /* Question+Utility.m in Sources */,
 				16EECE9C1A737C5200CC90A4 /* README.md in Sources */,
 				16EC62941A942E640016DA24 /* NSManagedObject+MagicalDataImport.m in Sources */,
 				16E422111A92DE8300621970 /* SettingViewController.m in Sources */,
+				16EC62C41A9445550016DA24 /* NSArray+Utility.m in Sources */,
 				16EC629F1A942E640016DA24 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				16EC62981A942E640016DA24 /* NSManagedObjectContext+MagicalChainSave.m in Sources */,
 				16E422141A92F29300621970 /* MenuPanelView.m in Sources */,
 				16EC624A1A942DEE0016DA24 /* Answer.m in Sources */,
 				16EC62A31A942E640016DA24 /* MagicalRecord+Options.m in Sources */,
+				16EC62AA1A9432F60016DA24 /* AskQuestionPanelPresenter.m in Sources */,
 				162F28CC19FDDD780043C638 /* AppDelegate.m in Sources */,
 				16EC62921A942E640016DA24 /* NSString+MagicalDataImport.m in Sources */,
 				16EC62931A942E640016DA24 /* NSManagedObject+MagicalAggregation.m in Sources */,
@@ -658,6 +733,7 @@
 				16EC628D1A942E640016DA24 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				16EC629D1A942E640016DA24 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
 				16E421EB1A92DC0400621970 /* Wireframe.m in Sources */,
+				16EC62B31A9437B50016DA24 /* QuestionRobotInteractor.m in Sources */,
 				16E4220E1A92DE7300621970 /* QuestionHistoryViewController.m in Sources */,
 				16E4220B1A92DE5D00621970 /* AskQuestionViewController.m in Sources */,
 				16EC62991A942E640016DA24 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
@@ -665,10 +741,12 @@
 				16EC62951A942E640016DA24 /* NSManagedObject+MagicalFinders.m in Sources */,
 				16EC628E1A942E640016DA24 /* NSEntityDescription+MagicalDataImport.m in Sources */,
 				16EC62961A942E640016DA24 /* NSManagedObject+MagicalRecord.m in Sources */,
+				16EC62AF1A9434080016DA24 /* AnswerInfo.m in Sources */,
 				16EC62A01A942E640016DA24 /* MagicalRecord+Actions.m in Sources */,
 				16E421EA1A92DC0400621970 /* PageMessenger.m in Sources */,
 				16EC628C1A942E640016DA24 /* MagicalImportFunctions.m in Sources */,
 				16EC629B1A942E640016DA24 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
+				16EC62BE1A943F080016DA24 /* QuestionInfo.m in Sources */,
 				16E422051A92DC5500621970 /* NSString+Utility.m in Sources */,
 				16EC62911A942E640016DA24 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
 				16EC62471A942DEE0016DA24 /* Question.m in Sources */,

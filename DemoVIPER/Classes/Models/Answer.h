@@ -13,7 +13,6 @@
 
 @interface Answer : NSManagedObject
 
-@property (nonatomic, retain) NSDate * timestamp;
 @property (nonatomic, retain) NSString * content;
 @property (nonatomic, retain) Question *question;
 

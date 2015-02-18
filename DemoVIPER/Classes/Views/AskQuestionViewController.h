@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "AskQuestionPanelPresenter.h"
 
 @interface AskQuestionViewController : BaseViewController
 
@@ -16,5 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIView *answerBoardView;
 @property (weak, nonatomic) IBOutlet UIImageView *emojiImageView;
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
+
+@property (nonatomic, strong) AskQuestionPanelPresenter *askQuestionPanelPresenter;
 
 @end

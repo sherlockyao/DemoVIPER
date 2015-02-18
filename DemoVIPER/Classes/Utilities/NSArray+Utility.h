@@ -1,18 +1,15 @@
 //
-//  Answer.m
+//  NSArray+Utility.h
 //  DemoVIPER
 //
 //  Created by Sherlock on 2/18/15.
 //  Copyright (c) 2015 originate. All rights reserved.
 //
 
-#import "Answer.h"
-#import "Question.h"
+#import <Foundation/Foundation.h>
 
+@interface NSArray (Utility)
 
-@implementation Answer
-
-@dynamic content;
-@dynamic question;
+- (id)sample;
 
 @end
