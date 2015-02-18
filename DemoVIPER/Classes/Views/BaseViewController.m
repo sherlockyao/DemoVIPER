@@ -75,7 +75,14 @@
 }
 
 - (void)configureProperties {}
-- (void)configureViews {}
+
+- (void)configureViews {
+  // navigation view shadow
+  self.navigationBarView.layer.shadowColor = [UIColor blackColor].CGColor;
+  self.navigationBarView.layer.shadowOffset = CGSizeMake(0, 2.5f);
+  self.navigationBarView.layer.shadowRadius = 1.5f;
+  self.navigationBarView.layer.shadowOpacity = 0.1f;
+}
 
 - (NSArray *)presenters {
   return @[self.navigationPresenter];

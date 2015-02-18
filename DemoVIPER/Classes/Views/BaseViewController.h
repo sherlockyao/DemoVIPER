@@ -11,6 +11,8 @@
 
 @interface BaseViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *navigationBarView;
+
 @property (nonatomic, strong) NSDictionary *params;
 
 @property (nonatomic, strong) NavigationPresenter *navigationPresenter;

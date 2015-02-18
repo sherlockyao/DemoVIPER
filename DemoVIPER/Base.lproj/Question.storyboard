@@ -129,6 +129,7 @@
                         <outlet property="answerBoardView" destination="IQi-4K-8F1" id="V5f-b8-UzC"/>
                         <outlet property="answerLabel" destination="rVb-7T-RXv" id="er0-NP-fiM"/>
                         <outlet property="emojiImageView" destination="Pme-oa-xCa" id="p2f-56-myv"/>
+                        <outlet property="navigationBarView" destination="kvE-ST-FPf" id="ONq-e4-kSt"/>
                         <outlet property="questionTextField" destination="CYy-gN-H84" id="Jv3-MQ-ntm"/>
                         <outlet property="questionsTableView" destination="nVH-80-cyP" id="S4M-zg-hF1"/>
                     </connections>
@@ -202,6 +203,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="navigationBarView" destination="eW1-FR-IYp" id="XCf-uo-Zfb"/>
                         <outlet property="questionsTableView" destination="TrW-ny-Lck" id="oK2-nw-Dia"/>
                     </connections>
                 </viewController>

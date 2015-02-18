@@ -70,6 +70,7 @@
                     </view>
                     <connections>
                         <outlet property="colorsTableView" destination="hiU-ST-9q5" id="bYt-Xk-RII"/>
+                        <outlet property="navigationBarView" destination="34L-PJ-Tnj" id="13c-h7-4S8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQO-vG-Oef" userLabel="First Responder" sceneMemberID="firstResponder"/>
