@@ -10,4 +10,10 @@
 
 @implementation MenuPanelView
 
++ (instancetype)create {
+  MenuPanelView *view = [[[NSBundle mainBundle] loadNibNamed:@"MenuPanelView" owner:nil options:nil] lastObject];
+  view.translatesAutoresizingMaskIntoConstraints = NO;
+  return view;
+}
+
 @end

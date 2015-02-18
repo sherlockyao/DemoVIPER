@@ -7,11 +7,14 @@
 //
 
 #import "AskQuestionViewController.h"
+#import "MenuPanelView.h"
 #import "NSArray+Utility.h"
 
 static NSString *const QuestionCellReuseIdentifier = @"QuestionCell";
 
 @interface AskQuestionViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, QuestionListInterface, AnswerBoardInterface, ProgressHudInterface>
+
+@property (nonatomic, strong) NSLayoutConstraint *menuPanelViewLeftConstraint;
 
 @property (nonatomic, strong) NSArray *questions;
 @property (nonatomic, strong) NSArray *emojiNames;
@@ -43,6 +46,15 @@ static NSString *const QuestionCellReuseIdentifier = @"QuestionCell";
   self.questionsTableView.dataSource = self;
   [self.questionsTableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]]; // remove extra lines
   
+  // menu panel
+  MenuPanelView *menuPanelView = [MenuPanelView create];
+  [self.view addSubview:menuPanelView];
+  [self.view addConstraint:[NSLayoutConstraint constraintWithItem:menuPanelView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:0]];
+  [self.view addConstraint:[NSLayoutConstraint constraintWithItem:menuPanelView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:0]];
+  [menuPanelView addConstraint:[NSLayoutConstraint constraintWithItem:menuPanelView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeWidth multiplier:1 constant:280.f]];
+  self.menuPanelViewLeftConstraint = [NSLayoutConstraint constraintWithItem:menuPanelView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1 constant:-280.f];
+  [self.view addConstraint:self.menuPanelViewLeftConstraint];
+  
   // wire up interfaces
   self.askQuestionPanelPresenter.questionList = self;
   self.askQuestionPanelPresenter.answerBoard = self;
@@ -52,7 +64,7 @@ static NSString *const QuestionCellReuseIdentifier = @"QuestionCell";
 #pragma mark - IB Actions
 
 - (IBAction)menuButtonTouchUpInside:(id)sender {
-  [self.navigationPresenter goToSettingScreen];
+  [self animateShowMenuPanelView];
 }
 
 - (IBAction)historyButtonTouchUpInside:(id)sender {
@@ -130,6 +142,22 @@ static NSString *const QuestionCellReuseIdentifier = @"QuestionCell";
   self.activityIndicatorView.hidden = YES;
   self.questionTextField.userInteractionEnabled = YES;
   self.questionsTableView.userInteractionEnabled = YES;
+}
+
+#pragma mark - Animations
+
+- (void)animateShowMenuPanelView {
+  [UIView animateWithDuration:0.35f animations:^{
+    self.menuPanelViewLeftConstraint.constant = 0;
+    [self.view layoutIfNeeded];
+  }];
+}
+
+- (void)animateHideMenuPanelView {
+  [UIView animateWithDuration:0.35f animations:^{
+    self.menuPanelViewLeftConstraint.constant = -280;
+    [self.view layoutIfNeeded];
+  }];
 }
 
 #pragma mark - Helper Methods

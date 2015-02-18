@@ -12,4 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *themeTableView;
 
++ (instancetype)create;
+
 @end
