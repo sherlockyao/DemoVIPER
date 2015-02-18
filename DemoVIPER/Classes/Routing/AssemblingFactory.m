@@ -67,6 +67,7 @@ static NSString *const SettingStoryboardName = @"Setting";
   QuestionHistoryViewController *viewController = [[UIStoryboard questionStoryboard] instantiateViewControllerWithIdentifier:QuestionHistoryScreenIdentifier];
   
   viewController.navigationPresenter = [self buildNavigationPresenter];
+  viewController.questionGroupPresenter = [self buildQuestionGroupPresenter];
 
   return viewController;
 }
@@ -84,6 +85,14 @@ static NSString *const SettingStoryboardName = @"Setting";
 
 + (NavigationPresenter *)buildNavigationPresenter {
   return [NavigationPresenter new];
+}
+
++ (QuestionGroupPresenter *)buildQuestionGroupPresenter {
+  QuestionGroupPresenter *presenter = [QuestionGroupPresenter new];
+  
+  presenter.questionRobotInteractor = [QuestionRobotInteractor new];
+  
+  return presenter;
 }
 
 + (AskQuestionPanelPresenter *)buildAskQuestionPanelPresenter {

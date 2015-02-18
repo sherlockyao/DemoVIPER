@@ -7,9 +7,12 @@
 //
 
 #import "BaseViewController.h"
+#import "QuestionGroupPresenter.h"
 
 @interface QuestionHistoryViewController : BaseViewController
 
 @property (weak, nonatomic) IBOutlet UITableView *questionsTableView;
+
+@property (nonatomic, strong) QuestionGroupPresenter *questionGroupPresenter;
 
 @end

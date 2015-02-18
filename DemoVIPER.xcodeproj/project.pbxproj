@@ -12,6 +12,9 @@
 		162F28D419FDDD780043C638 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162F28D319FDDD780043C638 /* Images.xcassets */; };
 		162F28D719FDDD780043C638 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 162F28D519FDDD780043C638 /* LaunchScreen.xib */; };
 		162F28E319FDDD780043C638 /* DemoVIPERTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28E219FDDD780043C638 /* DemoVIPERTests.m */; };
+		16523A321A94B35B0056D6B2 /* QuestionGroupPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16523A311A94B35B0056D6B2 /* QuestionGroupPresenter.m */; };
+		16523A361A94B6460056D6B2 /* QuestionDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16523A351A94B6460056D6B2 /* QuestionDetailCell.m */; };
+		16523A381A94B65A0056D6B2 /* QuestionDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16523A371A94B65A0056D6B2 /* QuestionDetailCell.xib */; };
 		16E421DD1A92DACC00621970 /* Question.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421DF1A92DACC00621970 /* Question.storyboard */; };
 		16E421E01A92DAD100621970 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421E21A92DAD100621970 /* Setting.storyboard */; };
 		16E421E91A92DC0400621970 /* AssemblingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421E41A92DC0400621970 /* AssemblingFactory.m */; };
@@ -90,6 +93,11 @@
 		162F28DC19FDDD780043C638 /* DemoVIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoVIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		162F28E119FDDD780043C638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		162F28E219FDDD780043C638 /* DemoVIPERTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoVIPERTests.m; sourceTree = "<group>"; };
+		16523A301A94B35B0056D6B2 /* QuestionGroupPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionGroupPresenter.h; path = Classes/Presenters/QuestionGroupPresenter.h; sourceTree = "<group>"; };
+		16523A311A94B35B0056D6B2 /* QuestionGroupPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionGroupPresenter.m; path = Classes/Presenters/QuestionGroupPresenter.m; sourceTree = "<group>"; };
+		16523A341A94B6460056D6B2 /* QuestionDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionDetailCell.h; path = Classes/Views/QuestionDetailCell.h; sourceTree = "<group>"; };
+		16523A351A94B6460056D6B2 /* QuestionDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionDetailCell.m; path = Classes/Views/QuestionDetailCell.m; sourceTree = "<group>"; };
+		16523A371A94B65A0056D6B2 /* QuestionDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionDetailCell.xib; path = Classes/Views/QuestionDetailCell.xib; sourceTree = "<group>"; };
 		16E421DE1A92DACC00621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Question.storyboard; sourceTree = "<group>"; };
 		16E421E11A92DAD100621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
 		16E421E31A92DC0400621970 /* AssemblingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssemblingFactory.h; path = Classes/Routing/AssemblingFactory.h; sourceTree = "<group>"; };
@@ -359,6 +367,8 @@
 				16E421F81A92DC3200621970 /* BasePresenter.m */,
 				16E422171A92F90200621970 /* NavigationPresenter.h */,
 				16E422181A92F90200621970 /* NavigationPresenter.m */,
+				16523A301A94B35B0056D6B2 /* QuestionGroupPresenter.h */,
+				16523A311A94B35B0056D6B2 /* QuestionGroupPresenter.m */,
 				16EC62A81A9432F60016DA24 /* AskQuestionPanelPresenter.h */,
 				16EC62A91A9432F60016DA24 /* AskQuestionPanelPresenter.m */,
 			);
@@ -383,6 +393,16 @@
 				16EC62C31A9445550016DA24 /* NSArray+Utility.m */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		16523A331A94B6180056D6B2 /* Question Detail Cell */ = {
+			isa = PBXGroup;
+			children = (
+				16523A341A94B6460056D6B2 /* QuestionDetailCell.h */,
+				16523A351A94B6460056D6B2 /* QuestionDetailCell.m */,
+				16523A371A94B65A0056D6B2 /* QuestionDetailCell.xib */,
+			);
+			name = "Question Detail Cell";
 			sourceTree = "<group>";
 		};
 		16E421D51A92D82900621970 /* Menu Panel */ = {
@@ -418,6 +438,7 @@
 			children = (
 				16E4220C1A92DE7300621970 /* QuestionHistoryViewController.h */,
 				16E4220D1A92DE7300621970 /* QuestionHistoryViewController.m */,
+				16523A331A94B6180056D6B2 /* Question Detail Cell */,
 			);
 			name = "Question History Screen";
 			sourceTree = "<group>";
@@ -681,6 +702,7 @@
 				16E421DD1A92DACC00621970 /* Question.storyboard in Resources */,
 				16E421E01A92DAD100621970 /* Setting.storyboard in Resources */,
 				16E422161A92F2B100621970 /* MenuPanelView.xib in Resources */,
+				16523A381A94B65A0056D6B2 /* QuestionDetailCell.xib in Resources */,
 				162F28D419FDDD780043C638 /* Images.xcassets in Resources */,
 				16EECE9F1A73884600CC90A4 /* RoutingSequence.png in Resources */,
 			);
@@ -706,6 +728,7 @@
 				16E421FD1A92DC3200621970 /* BasePresenter.m in Sources */,
 				16E422191A92F90200621970 /* NavigationPresenter.m in Sources */,
 				16E421E91A92DC0400621970 /* AssemblingFactory.m in Sources */,
+				16523A321A94B35B0056D6B2 /* QuestionGroupPresenter.m in Sources */,
 				16EC62C11A94438C0016DA24 /* Answer+Utility.m in Sources */,
 				16EC629E1A942E640016DA24 /* NSPersistentStore+MagicalRecord.m in Sources */,
 				16EC62901A942E640016DA24 /* NSObject+MagicalDataImport.m in Sources */,
@@ -738,6 +761,7 @@
 				16E4220B1A92DE5D00621970 /* AskQuestionViewController.m in Sources */,
 				16EC62991A942E640016DA24 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				16EC62A61A942E640016DA24 /* MagicalRecord.m in Sources */,
+				16523A361A94B6460056D6B2 /* QuestionDetailCell.m in Sources */,
 				16EC62951A942E640016DA24 /* NSManagedObject+MagicalFinders.m in Sources */,
 				16EC628E1A942E640016DA24 /* NSEntityDescription+MagicalDataImport.m in Sources */,
 				16EC62961A942E640016DA24 /* NSManagedObject+MagicalRecord.m in Sources */,
