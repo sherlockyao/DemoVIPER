@@ -7,9 +7,14 @@
 //
 
 #import "BaseViewController.h"
+#import "ThemeGroupPresenter.h"
+#import "ConfigurationPresenter.h"
 
 @interface SettingViewController : BaseViewController
 
-@property (weak, nonatomic) IBOutlet UITableView *colorsTableView;
+@property (weak, nonatomic) IBOutlet UITableView *themesTableView;
+
+@property (nonatomic, strong) ThemeGroupPresenter *themeGroupPresenter;
+@property (nonatomic, strong) ConfigurationPresenter *configurationPresenter;
 
 @end

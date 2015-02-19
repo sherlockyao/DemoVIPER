@@ -77,6 +77,8 @@ static NSString *const SettingStoryboardName = @"Setting";
   SettingViewController *viewController = [[UIStoryboard settingStoryboard] instantiateViewControllerWithIdentifier:SettingScreenIdentifier];
   
   viewController.navigationPresenter = [self buildNavigationPresenter];
+  viewController.configurationPresenter = [self buildConfigurationPresenter];
+  viewController.themeGroupPresenter = [self buildThemeGroupPresenterForSetting];
   
   return viewController;
 
@@ -105,10 +107,22 @@ static NSString *const SettingStoryboardName = @"Setting";
   return presenter;
 }
 
++ (ConfigurationPresenter *)buildConfigurationPresenter {
+  return [ConfigurationPresenter new];
+}
+
 + (ThemeGroupPresenter *)buildThemeGroupPresenterForMenu {
   ThemeGroupPresenter *presenter = [ThemeGroupPresenter new];
 
   presenter.needShowDisabledThemes = NO;
+  
+  return presenter;
+}
+
++ (ThemeGroupPresenter *)buildThemeGroupPresenterForSetting {
+  ThemeGroupPresenter *presenter = [ThemeGroupPresenter new];
+  
+  presenter.needShowDisabledThemes = YES;
   
   return presenter;
 }

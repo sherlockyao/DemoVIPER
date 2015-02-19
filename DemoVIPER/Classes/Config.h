@@ -11,4 +11,8 @@
 extern NSString *const PageMessengerNameDefault;
 extern NSString *const PageMessengerNameSetting;
 
+extern NSString *const ParamKeyTheme;
+
 extern NSString *const UserDefaultesKeyDisabledThemeNames;
+
+extern NSString *const NotificationNameUpdateThemeSetting;

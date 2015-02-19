@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hiU-ST-9q5" userLabel="Colors Table View">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hiU-ST-9q5" userLabel="Colors Table View">
                                 <rect key="frame" x="0.0" y="76" width="600" height="524"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -69,8 +69,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="colorsTableView" destination="hiU-ST-9q5" id="bYt-Xk-RII"/>
                         <outlet property="navigationBarView" destination="34L-PJ-Tnj" id="13c-h7-4S8"/>
+                        <outlet property="themesTableView" destination="hiU-ST-9q5" id="9Pa-NB-K1W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQO-vG-Oef" userLabel="First Responder" sceneMemberID="firstResponder"/>

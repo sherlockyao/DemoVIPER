@@ -7,12 +7,13 @@
 //
 
 #import "BasePresenter.h"
+#import "ThemeInfo.h"
 
 @interface NavigationPresenter : BasePresenter
 
 - (void)goBack;
 
 - (void)goToNextScreen;
-- (void)goToSettingScreen;
+- (void)goToSettingScreenWithCurrentTheme:(ThemeInfo *)theme;
 
 @end

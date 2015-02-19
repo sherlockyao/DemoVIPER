@@ -19,6 +19,9 @@
 		166A99D31A9590BC00283F66 /* ThemeGroupPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99D21A9590BC00283F66 /* ThemeGroupPresenter.m */; };
 		166A99D81A95986200283F66 /* ThemeChoiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99D61A95986200283F66 /* ThemeChoiceCell.m */; };
 		166A99D91A95986200283F66 /* ThemeChoiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166A99D71A95986200283F66 /* ThemeChoiceCell.xib */; };
+		166A99DE1A95A24D00283F66 /* ThemeSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99DC1A95A24D00283F66 /* ThemeSettingCell.m */; };
+		166A99DF1A95A24D00283F66 /* ThemeSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166A99DD1A95A24D00283F66 /* ThemeSettingCell.xib */; };
+		166A99E21A95ABE200283F66 /* ConfigurationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99E11A95ABE200283F66 /* ConfigurationPresenter.m */; };
 		16E421DD1A92DACC00621970 /* Question.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421DF1A92DACC00621970 /* Question.storyboard */; };
 		16E421E01A92DAD100621970 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421E21A92DAD100621970 /* Setting.storyboard */; };
 		16E421E91A92DC0400621970 /* AssemblingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421E41A92DC0400621970 /* AssemblingFactory.m */; };
@@ -110,6 +113,11 @@
 		166A99D51A95986200283F66 /* ThemeChoiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThemeChoiceCell.h; path = Classes/Views/ThemeChoiceCell.h; sourceTree = "<group>"; };
 		166A99D61A95986200283F66 /* ThemeChoiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThemeChoiceCell.m; path = Classes/Views/ThemeChoiceCell.m; sourceTree = "<group>"; };
 		166A99D71A95986200283F66 /* ThemeChoiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ThemeChoiceCell.xib; path = Classes/Views/ThemeChoiceCell.xib; sourceTree = "<group>"; };
+		166A99DB1A95A24D00283F66 /* ThemeSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThemeSettingCell.h; path = Classes/Views/ThemeSettingCell.h; sourceTree = "<group>"; };
+		166A99DC1A95A24D00283F66 /* ThemeSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThemeSettingCell.m; path = Classes/Views/ThemeSettingCell.m; sourceTree = "<group>"; };
+		166A99DD1A95A24D00283F66 /* ThemeSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ThemeSettingCell.xib; path = Classes/Views/ThemeSettingCell.xib; sourceTree = "<group>"; };
+		166A99E01A95ABE200283F66 /* ConfigurationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfigurationPresenter.h; path = Classes/Presenters/ConfigurationPresenter.h; sourceTree = "<group>"; };
+		166A99E11A95ABE200283F66 /* ConfigurationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfigurationPresenter.m; path = Classes/Presenters/ConfigurationPresenter.m; sourceTree = "<group>"; };
 		16E421DE1A92DACC00621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Question.storyboard; sourceTree = "<group>"; };
 		16E421E11A92DAD100621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
 		16E421E31A92DC0400621970 /* AssemblingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssemblingFactory.h; path = Classes/Routing/AssemblingFactory.h; sourceTree = "<group>"; };
@@ -380,6 +388,8 @@
 				16E421F81A92DC3200621970 /* BasePresenter.m */,
 				16E422171A92F90200621970 /* NavigationPresenter.h */,
 				16E422181A92F90200621970 /* NavigationPresenter.m */,
+				166A99E01A95ABE200283F66 /* ConfigurationPresenter.h */,
+				166A99E11A95ABE200283F66 /* ConfigurationPresenter.m */,
 				166A99D11A9590BC00283F66 /* ThemeGroupPresenter.h */,
 				166A99D21A9590BC00283F66 /* ThemeGroupPresenter.m */,
 				16523A301A94B35B0056D6B2 /* QuestionGroupPresenter.h */,
@@ -430,6 +440,16 @@
 			name = "Theme Choice Cell";
 			sourceTree = "<group>";
 		};
+		166A99DA1A95A22B00283F66 /* Theme Setting Cell */ = {
+			isa = PBXGroup;
+			children = (
+				166A99DB1A95A24D00283F66 /* ThemeSettingCell.h */,
+				166A99DC1A95A24D00283F66 /* ThemeSettingCell.m */,
+				166A99DD1A95A24D00283F66 /* ThemeSettingCell.xib */,
+			);
+			name = "Theme Setting Cell";
+			sourceTree = "<group>";
+		};
 		16E421D51A92D82900621970 /* Menu Panel */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +475,7 @@
 			children = (
 				16E4220F1A92DE8300621970 /* SettingViewController.h */,
 				16E422101A92DE8300621970 /* SettingViewController.m */,
+				166A99DA1A95A22B00283F66 /* Theme Setting Cell */,
 			);
 			name = "Setting Screen";
 			sourceTree = "<group>";
@@ -730,6 +751,7 @@
 				16E421DD1A92DACC00621970 /* Question.storyboard in Resources */,
 				166A99D91A95986200283F66 /* ThemeChoiceCell.xib in Resources */,
 				16E421E01A92DAD100621970 /* Setting.storyboard in Resources */,
+				166A99DF1A95A24D00283F66 /* ThemeSettingCell.xib in Resources */,
 				16E422161A92F2B100621970 /* MenuPanelView.xib in Resources */,
 				16523A381A94B65A0056D6B2 /* QuestionDetailCell.xib in Resources */,
 				162F28D419FDDD780043C638 /* Images.xcassets in Resources */,
@@ -776,6 +798,7 @@
 				16EC62AA1A9432F60016DA24 /* AskQuestionPanelPresenter.m in Sources */,
 				162F28CC19FDDD780043C638 /* AppDelegate.m in Sources */,
 				16EC62921A942E640016DA24 /* NSString+MagicalDataImport.m in Sources */,
+				166A99DE1A95A24D00283F66 /* ThemeSettingCell.m in Sources */,
 				16EC62931A942E640016DA24 /* NSManagedObject+MagicalAggregation.m in Sources */,
 				162F28C919FDDD780043C638 /* main.m in Sources */,
 				16EC629A1A942E640016DA24 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
@@ -805,6 +828,7 @@
 				16EC62BE1A943F080016DA24 /* QuestionInfo.m in Sources */,
 				16E422051A92DC5500621970 /* NSString+Utility.m in Sources */,
 				16EC62911A942E640016DA24 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
+				166A99E21A95ABE200283F66 /* ConfigurationPresenter.m in Sources */,
 				16EC62471A942DEE0016DA24 /* Question.m in Sources */,
 				16EC628F1A942E640016DA24 /* NSNumber+MagicalDataImport.m in Sources */,
 				16EC62A11A942E640016DA24 /* MagicalRecord+ErrorHandling.m in Sources */,

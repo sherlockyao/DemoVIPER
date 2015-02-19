@@ -124,7 +124,7 @@ static NSString *const QuestionCellReuseIdentifier = @"QuestionCell";
 #pragma mark - MenuPanelViewDelegate
 
 - (void)menuPanelDidClickManageTheme:(MenuPanelView *)menuPanelView {
-  [self.navigationPresenter goToSettingScreen];
+  [self.navigationPresenter goToSettingScreenWithCurrentTheme:[menuPanelView selectedTheme]];
   [self animateHideMenuPanelView];
 }
 

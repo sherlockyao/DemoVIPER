@@ -34,7 +34,7 @@
   theme.color = [UIColor colorWithHex:colorHex];
   theme.tintColor = [UIColor colorWithHex:tintColorHex];
   theme.enabled = YES;
-  theme.selected = NO;
+  theme.isCurrent = NO;
   
   return theme;
 }

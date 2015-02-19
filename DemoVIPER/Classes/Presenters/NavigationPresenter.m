@@ -22,8 +22,11 @@
   [Wireframe moveToNextScreenOfViewController:self.mainViewController messenger:pageMessenger];
 }
 
-- (void)goToSettingScreen {
+- (void)goToSettingScreenWithCurrentTheme:(ThemeInfo *)theme {
   PageMessenger *pageMessenger = [PageMessenger messengerWithName:PageMessengerNameSetting];
+  if (theme) {
+    [pageMessenger addParam:ParamKeyTheme value:theme];
+  }
   [Wireframe moveToNextScreenOfViewController:self.mainViewController messenger:pageMessenger];
 }
 

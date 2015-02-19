@@ -22,11 +22,28 @@
 
 - (void)viewDidLoad:(UIViewController *)viewController {
   [super viewDidLoad:viewController];
-  NSArray *themes = [self loadNeededThemes];
-  [self.themeList displayThemes:themes];
+  [self displayThemes];
+  if (!self.needShowDisabledThemes) {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(themeUpdatedNotification:) name:NotificationNameUpdateThemeSetting object:nil];
+  }
+}
+
+- (void)dealloc {
+  [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark - Notifications
+
+- (void)themeUpdatedNotification:(NSNotification *)notification {
+  [self displayThemes];
 }
 
 #pragma mark - Prviate Methods
+
+- (void)displayThemes {
+  NSArray *themes = [self loadNeededThemes];
+  [self.themeList displayThemes:themes];
+}
 
 - (NSArray *)loadNeededThemes {
   NSArray *allThemes = [self loadAllThemes];
@@ -51,11 +68,11 @@
                              [ThemeInfo themeWithName:@"Pink" color:0xec407a tintColor:0xFFB0CD],
                              [ThemeInfo themeWithName:@"Orange" color:0xf57c00 tintColor:0xFFE771]
                              ];
-  NSArray *disabledThemeNames = [[NSUserDefaults standardUserDefaults] arrayForKey:UserDefaultesKeyDisabledThemeNames];
-  if (disabledThemeNames) {
-    for (ThemeInfo *theme in defaultThemes) {
-      theme.enabled = ![disabledThemeNames containsObject:theme.name];
-    }
+  NSArray *disabledThemeNames = [[NSUserDefaults standardUserDefaults] arrayForKey:UserDefaultesKeyDisabledThemeNames] ?: @[];
+  ThemeInfo *currentTheme = [self parameterNamed:ParamKeyTheme];
+  for (ThemeInfo *theme in defaultThemes) {
+    theme.enabled = ![disabledThemeNames containsObject:theme.name];
+    theme.isCurrent = [theme.name isEqualToString:currentTheme.name];
   }
   return defaultThemes;
 }

@@ -11,4 +11,8 @@
 NSString *const PageMessengerNameDefault = @"Default";
 NSString *const PageMessengerNameSetting = @"Setting";
 
+NSString *const ParamKeyTheme = @"ThemeInfo";
+
 NSString *const UserDefaultesKeyDisabledThemeNames = @"array.disabled-theme-names";
+
+NSString *const NotificationNameUpdateThemeSetting = @"viper.notification.update.theme";

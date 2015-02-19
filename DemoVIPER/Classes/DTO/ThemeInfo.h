@@ -14,7 +14,7 @@
 @property (nonatomic, strong) UIColor * color;
 @property (nonatomic, strong) UIColor * tintColor;
 @property (nonatomic, assign) BOOL enabled;
-@property (nonatomic, assign) BOOL selected;
+@property (nonatomic, assign) BOOL isCurrent;
 
 + (instancetype)themeWithName:(NSString *)name color:(long)colorHex tintColor:(long)tintColorHex;
 
