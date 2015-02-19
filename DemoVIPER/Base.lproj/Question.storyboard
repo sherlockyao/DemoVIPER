@@ -46,10 +46,10 @@
                                             <constraint firstAttribute="width" constant="100" id="bba-bt-lig"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.87" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVb-7T-RXv" userLabel="Answer Label">
-                                        <rect key="frame" x="72" y="121" width="456" height="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.87" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVb-7T-RXv" userLabel="Answer Label">
+                                        <rect key="frame" x="72" y="121" width="456" height="75"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="WTY-ps-duq"/>
+                                            <constraint firstAttribute="height" constant="75" id="WTY-ps-duq"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" red="0.25490196079999999" green="0.64313725489999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

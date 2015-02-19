@@ -32,6 +32,7 @@ static NSString *const ThemeSettingCellReuseIdentifier = @"ThemeSettingCell";
   // table view
   self.themesTableView.dataSource = self;
   self.themesTableView.rowHeight = 60.f;
+  self.themesTableView.contentInset = UIEdgeInsetsMake(8, 0, 8, 0);
   [self.themesTableView registerNib:[UINib nibWithNibName:@"ThemeSettingCell" bundle:nil] forCellReuseIdentifier:ThemeSettingCellReuseIdentifier];
   
   // wire up interfaces
