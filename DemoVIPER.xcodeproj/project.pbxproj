@@ -24,6 +24,7 @@
 		166A99E51A95C05C00283F66 /* AssemblingFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99E41A95C05C00283F66 /* AssemblingFactoryTests.m */; };
 		166A99E81A95C44300283F66 /* AskQuestionViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99E71A95C44300283F66 /* AskQuestionViewControllerTests.m */; };
 		166A99EA1A95CCE000283F66 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 166A99E91A95CCE000283F66 /* libOCMock.a */; };
+		166A99ED1A95D69500283F66 /* AskQuestionPanelPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99EC1A95D69500283F66 /* AskQuestionPanelPresenterTests.m */; };
 		16E421DD1A92DACC00621970 /* Question.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421DF1A92DACC00621970 /* Question.storyboard */; };
 		16E421E01A92DAD100621970 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421E21A92DAD100621970 /* Setting.storyboard */; };
 		16E421E91A92DC0400621970 /* AssemblingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421E41A92DC0400621970 /* AssemblingFactory.m */; };
@@ -122,6 +123,7 @@
 		166A99E41A95C05C00283F66 /* AssemblingFactoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssemblingFactoryTests.m; sourceTree = "<group>"; };
 		166A99E71A95C44300283F66 /* AskQuestionViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskQuestionViewControllerTests.m; sourceTree = "<group>"; };
 		166A99E91A95CCE000283F66 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = OCMock/lib/libOCMock.a; sourceTree = "<group>"; };
+		166A99EC1A95D69500283F66 /* AskQuestionPanelPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskQuestionPanelPresenterTests.m; sourceTree = "<group>"; };
 		16E421DE1A92DACC00621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Question.storyboard; sourceTree = "<group>"; };
 		16E421E11A92DAD100621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
 		16E421E31A92DC0400621970 /* AssemblingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssemblingFactory.h; path = Classes/Routing/AssemblingFactory.h; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 			children = (
 				166A99E31A95C04100283F66 /* Routing */,
 				166A99E61A95C3FF00283F66 /* Views */,
+				166A99EB1A95D62D00283F66 /* Presenters */,
 				162F28E019FDDD780043C638 /* Supporting Files */,
 			);
 			path = DemoVIPERTests;
@@ -471,6 +474,14 @@
 				166A99E71A95C44300283F66 /* AskQuestionViewControllerTests.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		166A99EB1A95D62D00283F66 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				166A99EC1A95D69500283F66 /* AskQuestionPanelPresenterTests.m */,
+			);
+			name = Presenters;
 			sourceTree = "<group>";
 		};
 		16E421D51A92D82900621970 /* Menu Panel */ = {
@@ -864,6 +875,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				166A99E81A95C44300283F66 /* AskQuestionViewControllerTests.m in Sources */,
+				166A99ED1A95D69500283F66 /* AskQuestionPanelPresenterTests.m in Sources */,
 				166A99E51A95C05C00283F66 /* AssemblingFactoryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
