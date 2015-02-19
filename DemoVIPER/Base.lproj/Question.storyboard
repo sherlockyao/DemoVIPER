@@ -155,6 +155,8 @@
                         <outlet property="answerBoardView" destination="IQi-4K-8F1" id="V5f-b8-UzC"/>
                         <outlet property="answerLabel" destination="rVb-7T-RXv" id="er0-NP-fiM"/>
                         <outlet property="emojiImageView" destination="Pme-oa-xCa" id="p2f-56-myv"/>
+                        <outlet property="historyButton" destination="n3d-b3-V1r" id="AY2-BH-9sU"/>
+                        <outlet property="menuButton" destination="Q1g-g1-irI" id="eUZ-d6-eNe"/>
                         <outlet property="navigationBarView" destination="kvE-ST-FPf" id="ONq-e4-kSt"/>
                         <outlet property="questionTextField" destination="CYy-gN-H84" id="Jv3-MQ-ntm"/>
                         <outlet property="questionsTableView" destination="nVH-80-cyP" id="S4M-zg-hF1"/>

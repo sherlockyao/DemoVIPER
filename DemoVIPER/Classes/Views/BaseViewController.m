@@ -26,6 +26,7 @@
   self = [super initWithCoder:aDecoder];
   if (self) {
     _params = @{};
+    _needInstantAnimation = NO;
   }
   return self;
 }

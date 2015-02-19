@@ -7,12 +7,11 @@
 //
 
 #import "AskQuestionViewController.h"
-#import "MenuPanelView.h"
 #import "NSArray+Utility.h"
 
 static NSString *const QuestionCellReuseIdentifier = @"QuestionCell";
 
-@interface AskQuestionViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, QuestionListInterface, AnswerBoardInterface, ProgressHudInterface, MenuPanelViewDelegate>
+@interface AskQuestionViewController ()
 
 @property (nonatomic, strong) NSLayoutConstraint *menuPanelViewLeftConstraint;
 
@@ -55,6 +54,7 @@ static NSString *const QuestionCellReuseIdentifier = @"QuestionCell";
   [menuPanelView addConstraint:[NSLayoutConstraint constraintWithItem:menuPanelView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeWidth multiplier:1 constant:280.f]];
   self.menuPanelViewLeftConstraint = [NSLayoutConstraint constraintWithItem:menuPanelView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1 constant:-280.f];
   [self.view addConstraint:self.menuPanelViewLeftConstraint];
+  self.menuPanelView = menuPanelView;
   
   // wire up interfaces
   self.askQuestionPanelPresenter.questionList = self;
@@ -167,14 +167,14 @@ static NSString *const QuestionCellReuseIdentifier = @"QuestionCell";
 #pragma mark - Animations
 
 - (void)animateShowMenuPanelView {
-  [UIView animateWithDuration:0.35f animations:^{
+  [UIView animateWithDuration:(self.needInstantAnimation ? 0 : 0.3f) animations:^{
     self.menuPanelViewLeftConstraint.constant = 0;
     [self.view layoutIfNeeded];
   }];
 }
 
 - (void)animateHideMenuPanelView {
-  [UIView animateWithDuration:0.35f animations:^{
+  [UIView animateWithDuration:(self.needInstantAnimation ? 0 : 0.3f) animations:^{
     self.menuPanelViewLeftConstraint.constant = -280;
     [self.view layoutIfNeeded];
   }];

@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *navigationBarView;
 
+@property (nonatomic, assign) BOOL needInstantAnimation; // default NO;
 @property (nonatomic, strong) NSDictionary *params;
 
 @property (nonatomic, strong) NavigationPresenter *navigationPresenter;

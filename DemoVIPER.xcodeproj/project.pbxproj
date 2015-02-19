@@ -22,6 +22,8 @@
 		166A99DF1A95A24D00283F66 /* ThemeSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166A99DD1A95A24D00283F66 /* ThemeSettingCell.xib */; };
 		166A99E21A95ABE200283F66 /* ConfigurationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99E11A95ABE200283F66 /* ConfigurationPresenter.m */; };
 		166A99E51A95C05C00283F66 /* AssemblingFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99E41A95C05C00283F66 /* AssemblingFactoryTests.m */; };
+		166A99E81A95C44300283F66 /* AskQuestionViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99E71A95C44300283F66 /* AskQuestionViewControllerTests.m */; };
+		166A99EA1A95CCE000283F66 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 166A99E91A95CCE000283F66 /* libOCMock.a */; };
 		16E421DD1A92DACC00621970 /* Question.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421DF1A92DACC00621970 /* Question.storyboard */; };
 		16E421E01A92DAD100621970 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421E21A92DAD100621970 /* Setting.storyboard */; };
 		16E421E91A92DC0400621970 /* AssemblingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421E41A92DC0400621970 /* AssemblingFactory.m */; };
@@ -118,6 +120,8 @@
 		166A99E01A95ABE200283F66 /* ConfigurationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfigurationPresenter.h; path = Classes/Presenters/ConfigurationPresenter.h; sourceTree = "<group>"; };
 		166A99E11A95ABE200283F66 /* ConfigurationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfigurationPresenter.m; path = Classes/Presenters/ConfigurationPresenter.m; sourceTree = "<group>"; };
 		166A99E41A95C05C00283F66 /* AssemblingFactoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssemblingFactoryTests.m; sourceTree = "<group>"; };
+		166A99E71A95C44300283F66 /* AskQuestionViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskQuestionViewControllerTests.m; sourceTree = "<group>"; };
+		166A99E91A95CCE000283F66 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = OCMock/lib/libOCMock.a; sourceTree = "<group>"; };
 		16E421DE1A92DACC00621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Question.storyboard; sourceTree = "<group>"; };
 		16E421E11A92DAD100621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
 		16E421E31A92DC0400621970 /* AssemblingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssemblingFactory.h; path = Classes/Routing/AssemblingFactory.h; sourceTree = "<group>"; };
@@ -243,6 +247,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				166A99EA1A95CCE000283F66 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +257,7 @@
 		162F28BA19FDDD780043C638 = {
 			isa = PBXGroup;
 			children = (
+				166A99E91A95CCE000283F66 /* libOCMock.a */,
 				16EECE9B1A737C5200CC90A4 /* README.md */,
 				16EECE9D1A73800600CC90A4 /* Documents */,
 				162F28C519FDDD780043C638 /* DemoVIPER */,
@@ -462,6 +468,7 @@
 		166A99E61A95C3FF00283F66 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				166A99E71A95C44300283F66 /* AskQuestionViewControllerTests.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -856,6 +863,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				166A99E81A95C44300283F66 /* AskQuestionViewControllerTests.m in Sources */,
 				166A99E51A95C05C00283F66 /* AssemblingFactoryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1006,8 +1014,23 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/OCMock/include",
+				);
 				INFOPLIST_FILE = DemoVIPERTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCMock/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoVIPER.app/DemoVIPER";
 			};
@@ -1021,8 +1044,23 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/OCMock/include",
+				);
 				INFOPLIST_FILE = DemoVIPERTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCMock/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoVIPER.app/DemoVIPER";
 			};
