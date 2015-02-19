@@ -11,7 +11,6 @@
 		162F28CC19FDDD780043C638 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28CB19FDDD780043C638 /* AppDelegate.m */; };
 		162F28D419FDDD780043C638 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162F28D319FDDD780043C638 /* Images.xcassets */; };
 		162F28D719FDDD780043C638 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 162F28D519FDDD780043C638 /* LaunchScreen.xib */; };
-		162F28E319FDDD780043C638 /* DemoVIPERTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 162F28E219FDDD780043C638 /* DemoVIPERTests.m */; };
 		16523A321A94B35B0056D6B2 /* QuestionGroupPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16523A311A94B35B0056D6B2 /* QuestionGroupPresenter.m */; };
 		16523A361A94B6460056D6B2 /* QuestionDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16523A351A94B6460056D6B2 /* QuestionDetailCell.m */; };
 		16523A381A94B65A0056D6B2 /* QuestionDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16523A371A94B65A0056D6B2 /* QuestionDetailCell.xib */; };
@@ -22,6 +21,7 @@
 		166A99DE1A95A24D00283F66 /* ThemeSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99DC1A95A24D00283F66 /* ThemeSettingCell.m */; };
 		166A99DF1A95A24D00283F66 /* ThemeSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166A99DD1A95A24D00283F66 /* ThemeSettingCell.xib */; };
 		166A99E21A95ABE200283F66 /* ConfigurationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99E11A95ABE200283F66 /* ConfigurationPresenter.m */; };
+		166A99E51A95C05C00283F66 /* AssemblingFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99E41A95C05C00283F66 /* AssemblingFactoryTests.m */; };
 		16E421DD1A92DACC00621970 /* Question.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421DF1A92DACC00621970 /* Question.storyboard */; };
 		16E421E01A92DAD100621970 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421E21A92DAD100621970 /* Setting.storyboard */; };
 		16E421E91A92DC0400621970 /* AssemblingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421E41A92DC0400621970 /* AssemblingFactory.m */; };
@@ -99,7 +99,6 @@
 		162F28D619FDDD780043C638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		162F28DC19FDDD780043C638 /* DemoVIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoVIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		162F28E119FDDD780043C638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		162F28E219FDDD780043C638 /* DemoVIPERTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoVIPERTests.m; sourceTree = "<group>"; };
 		16523A301A94B35B0056D6B2 /* QuestionGroupPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionGroupPresenter.h; path = Classes/Presenters/QuestionGroupPresenter.h; sourceTree = "<group>"; };
 		16523A311A94B35B0056D6B2 /* QuestionGroupPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionGroupPresenter.m; path = Classes/Presenters/QuestionGroupPresenter.m; sourceTree = "<group>"; };
 		16523A341A94B6460056D6B2 /* QuestionDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionDetailCell.h; path = Classes/Views/QuestionDetailCell.h; sourceTree = "<group>"; };
@@ -118,6 +117,7 @@
 		166A99DD1A95A24D00283F66 /* ThemeSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ThemeSettingCell.xib; path = Classes/Views/ThemeSettingCell.xib; sourceTree = "<group>"; };
 		166A99E01A95ABE200283F66 /* ConfigurationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfigurationPresenter.h; path = Classes/Presenters/ConfigurationPresenter.h; sourceTree = "<group>"; };
 		166A99E11A95ABE200283F66 /* ConfigurationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfigurationPresenter.m; path = Classes/Presenters/ConfigurationPresenter.m; sourceTree = "<group>"; };
+		166A99E41A95C05C00283F66 /* AssemblingFactoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssemblingFactoryTests.m; sourceTree = "<group>"; };
 		16E421DE1A92DACC00621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Question.storyboard; sourceTree = "<group>"; };
 		16E421E11A92DAD100621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
 		16E421E31A92DC0400621970 /* AssemblingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssemblingFactory.h; path = Classes/Routing/AssemblingFactory.h; sourceTree = "<group>"; };
@@ -291,7 +291,8 @@
 		162F28DF19FDDD780043C638 /* DemoVIPERTests */ = {
 			isa = PBXGroup;
 			children = (
-				162F28E219FDDD780043C638 /* DemoVIPERTests.m */,
+				166A99E31A95C04100283F66 /* Routing */,
+				166A99E61A95C3FF00283F66 /* Views */,
 				162F28E019FDDD780043C638 /* Supporting Files */,
 			);
 			path = DemoVIPERTests;
@@ -448,6 +449,21 @@
 				166A99DD1A95A24D00283F66 /* ThemeSettingCell.xib */,
 			);
 			name = "Theme Setting Cell";
+			sourceTree = "<group>";
+		};
+		166A99E31A95C04100283F66 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				166A99E41A95C05C00283F66 /* AssemblingFactoryTests.m */,
+			);
+			name = Routing;
+			sourceTree = "<group>";
+		};
+		166A99E61A95C3FF00283F66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		16E421D51A92D82900621970 /* Menu Panel */ = {
@@ -840,7 +856,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				162F28E319FDDD780043C638 /* DemoVIPERTests.m in Sources */,
+				166A99E51A95C05C00283F66 /* AssemblingFactoryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
