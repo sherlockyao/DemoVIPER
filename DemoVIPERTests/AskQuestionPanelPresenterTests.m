@@ -55,6 +55,7 @@
   [self.quesionListMock verify];
 }
 
+// Dealing with block arguments
 - (void)testAskQuestion {
   AnswerInfo *answer = [AnswerInfo new];
   id questionRobotInteractorMock = self.presenter.questionRobotInteractor;
