@@ -124,7 +124,7 @@
 		166A99E11A95ABE200283F66 /* ConfigurationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfigurationPresenter.m; path = Classes/Presenters/ConfigurationPresenter.m; sourceTree = "<group>"; };
 		166A99E41A95C05C00283F66 /* AssemblingFactoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssemblingFactoryTests.m; sourceTree = "<group>"; };
 		166A99E71A95C44300283F66 /* AskQuestionViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskQuestionViewControllerTests.m; sourceTree = "<group>"; };
-		166A99E91A95CCE000283F66 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = OCMock/lib/libOCMock.a; sourceTree = "<group>"; };
+		166A99E91A95CCE000283F66 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = ../OCMock/lib/libOCMock.a; sourceTree = "<group>"; };
 		166A99EC1A95D69500283F66 /* AskQuestionPanelPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskQuestionPanelPresenterTests.m; sourceTree = "<group>"; };
 		166A99EF1A95DC5E00283F66 /* QuestionRobotInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionRobotInteractorTests.m; sourceTree = "<group>"; };
 		166A99F21A95DF5400283F66 /* QuestionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTests.m; sourceTree = "<group>"; };
@@ -263,7 +263,6 @@
 		162F28BA19FDDD780043C638 = {
 			isa = PBXGroup;
 			children = (
-				166A99E91A95CCE000283F66 /* libOCMock.a */,
 				16EECE9B1A737C5200CC90A4 /* README.md */,
 				16EECE9D1A73800600CC90A4 /* Documents */,
 				162F28C519FDDD780043C638 /* DemoVIPER */,
@@ -571,6 +570,7 @@
 		16EC624B1A942E3B0016DA24 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				166A99E91A95CCE000283F66 /* libOCMock.a */,
 				16EC624C1A942E630016DA24 /* MagicalRecord */,
 			);
 			name = Libraries;
