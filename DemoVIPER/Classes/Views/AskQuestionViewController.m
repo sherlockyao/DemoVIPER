@@ -12,7 +12,7 @@
 
 static NSString *const QuestionCellReuseIdentifier = @"QuestionCell";
 
-@interface AskQuestionViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, QuestionListInterface, AnswerBoardInterface, ProgressHudInterface>
+@interface AskQuestionViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, QuestionListInterface, AnswerBoardInterface, ProgressHudInterface, MenuPanelViewDelegate>
 
 @property (nonatomic, strong) NSLayoutConstraint *menuPanelViewLeftConstraint;
 
@@ -48,6 +48,7 @@ static NSString *const QuestionCellReuseIdentifier = @"QuestionCell";
   
   // menu panel
   MenuPanelView *menuPanelView = [MenuPanelView create];
+  menuPanelView.delegate = self;
   [self.view addSubview:menuPanelView];
   [self.view addConstraint:[NSLayoutConstraint constraintWithItem:menuPanelView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:0]];
   [self.view addConstraint:[NSLayoutConstraint constraintWithItem:menuPanelView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:0]];
@@ -59,6 +60,11 @@ static NSString *const QuestionCellReuseIdentifier = @"QuestionCell";
   self.askQuestionPanelPresenter.questionList = self;
   self.askQuestionPanelPresenter.answerBoard = self;
   self.askQuestionPanelPresenter.progresshud = self;
+  self.themeGroupPresenter.themeList = menuPanelView;
+}
+
+- (NSArray *)presenters {
+  return [[super presenters] arrayByAddingObjectsFromArray:@[self.askQuestionPanelPresenter, self.themeGroupPresenter]];
 }
 
 #pragma mark - IB Actions
@@ -102,15 +108,29 @@ static NSString *const QuestionCellReuseIdentifier = @"QuestionCell";
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
   [textField resignFirstResponder];
-  QuestionInfo *question = [QuestionInfo new];
-  question.content = textField.text;
-  [self.askQuestionPanelPresenter askQuestion:question];
+  if (0 < textField.text.length) {
+    QuestionInfo *question = [QuestionInfo new];
+    question.content = textField.text;
+    [self.askQuestionPanelPresenter askQuestion:question];
+  }
   return NO;
 }
 
 - (void)textFieldDidChange:(id)sender {
   self.answerBoardView.hidden = YES;
   [self.askQuestionPanelPresenter enteringQuestionText:self.questionTextField.text];
+}
+
+#pragma mark - MenuPanelViewDelegate
+
+- (void)menuPanelDidClickManageTheme:(MenuPanelView *)menuPanelView {
+  [self.navigationPresenter goToSettingScreen];
+  [self animateHideMenuPanelView];
+}
+
+- (void)menuPanel:(MenuPanelView *)menuPanelView didChooseTheme:(ThemeInfo *)theme {
+  self.navigationBarView.backgroundColor = theme.tintColor;
+  [self animateHideMenuPanelView];
 }
 
 #pragma mark - QuestionListInterface

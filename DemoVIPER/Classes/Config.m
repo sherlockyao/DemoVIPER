@@ -10,3 +10,5 @@
 
 NSString *const PageMessengerNameDefault = @"Default";
 NSString *const PageMessengerNameSetting = @"Setting";
+
+NSString *const UserDefaultesKeyDisabledThemeNames = @"array.disabled-theme-names";

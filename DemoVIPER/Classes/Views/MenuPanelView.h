@@ -7,11 +7,29 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ThemeListInterface.h"
+#import "ThemeInfo.h"
 
-@interface MenuPanelView : UIView
+@protocol MenuPanelViewDelegate;
 
+@interface MenuPanelView : UIView <ThemeListInterface>
+
+@property (weak, nonatomic) IBOutlet UIView *titleBoardView;
 @property (weak, nonatomic) IBOutlet UITableView *themeTableView;
 
+@property (readonly, nonatomic, strong) ThemeInfo *selectedTheme;
+
+@property (nonatomic, weak) id<MenuPanelViewDelegate> delegate;
+
 + (instancetype)create;
+
+@end
+
+
+@protocol MenuPanelViewDelegate <NSObject>
+
+@optional
+- (void)menuPanel:(MenuPanelView *)menuPanelView didChooseTheme:(ThemeInfo *)theme;
+- (void)menuPanelDidClickManageTheme:(MenuPanelView *)menuPanelView;
 
 @end

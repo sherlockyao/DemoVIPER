@@ -59,6 +59,7 @@ static NSString *const SettingStoryboardName = @"Setting";
   
   viewController.navigationPresenter = [self buildNavigationPresenter];
   viewController.askQuestionPanelPresenter = [self buildAskQuestionPanelPresenter];
+  viewController.themeGroupPresenter = [self buildThemeGroupPresenterForMenu];
   
   return viewController;
 }
@@ -100,6 +101,14 @@ static NSString *const SettingStoryboardName = @"Setting";
   
   presenter.candidateQuestionCount = 5;
   presenter.questionRobotInteractor = [QuestionRobotInteractor new];
+  
+  return presenter;
+}
+
++ (ThemeGroupPresenter *)buildThemeGroupPresenterForMenu {
+  ThemeGroupPresenter *presenter = [ThemeGroupPresenter new];
+
+  presenter.needShowDisabledThemes = NO;
   
   return presenter;
 }

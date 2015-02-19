@@ -10,3 +10,5 @@
 
 extern NSString *const PageMessengerNameDefault;
 extern NSString *const PageMessengerNameSetting;
+
+extern NSString *const UserDefaultesKeyDisabledThemeNames;

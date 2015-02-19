@@ -43,12 +43,12 @@
                         <constraint firstAttribute="trailing" secondItem="b8h-4n-30M" secondAttribute="trailing" constant="12" id="orD-l9-Rmc"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EjX-P8-mFl" userLabel="Theme Table View">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EjX-P8-mFl" userLabel="Theme Table View">
                     <rect key="frame" x="0.0" y="150" width="280" height="450"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.89411764705882357" green="0.89411764705882357" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.89411764705882357" green="0.89411764705882357" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="EjX-P8-mFl" secondAttribute="trailing" id="5iV-D4-YxZ"/>
                 <constraint firstItem="EH9-h2-thb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AtJ-5W-vn6"/>
@@ -64,6 +64,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="themeTableView" destination="EjX-P8-mFl" id="9UC-hG-Lf4"/>
+                <outlet property="titleBoardView" destination="EH9-h2-thb" id="Vfk-jz-T2F"/>
             </connections>
             <point key="canvasLocation" x="332" y="347"/>
         </view>

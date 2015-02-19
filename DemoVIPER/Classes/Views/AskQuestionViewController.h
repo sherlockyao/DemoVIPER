@@ -8,6 +8,7 @@
 
 #import "BaseViewController.h"
 #import "AskQuestionPanelPresenter.h"
+#import "ThemeGroupPresenter.h"
 
 @interface AskQuestionViewController : BaseViewController
 
@@ -19,5 +20,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 
 @property (nonatomic, strong) AskQuestionPanelPresenter *askQuestionPanelPresenter;
+@property (nonatomic, strong) ThemeGroupPresenter *themeGroupPresenter;
 
 @end
