@@ -36,5 +36,23 @@ A typical work flow between views and presenters would be like this:
   7. Presneter Y deals with this action based on view logic
 
 
-## Interactor
+## Interactor - Presenter
+
+Interactor contains the business logic as specified by a use case. Actually we don't need to stick to the name, i.e. "Interactor", we could use "Service", "Manage" and the like, as long as it plays the part of dealing with logic, it should be independent of any UI. Also, inside the interactor, it could call other services(like send API calls to server) to finish the logic. Each Presenter could contains 0...* interactors. The idea of interactor is to isolate the business logic code from others, then it could be reused, optimized and generalized.
+
+
+## Models, DTO
+
+As the requirements grows in applications, CoreData has already become an indispensable part of the app. But usually we don't want to expose Model instances to Views as they contains persistent status, we use DTOs(Data Transfer Objects) to play the data passer roles. Here in the Demo project you can see how it was used.
+
+
+## Tests
+
+One good part of VIPER architecture is it decouples UI, view logic, bussiness logic in code, so it would be more easier for developers to write unit tests. In this Demo project, I added testcase examples for every part of this architecture, so we could see how easier to test each part, also it demonstrates how to test each part of the code, as well as dealing with block arguments, testing asynchronous code.
+
+
+## 3rd Party Libraries
+
+In this Demo project, we are using MagicalRecord to make fetching for CoreData more easier, and OCMock to help write unit tests. (they are both my personally recommended tools)
+
 
