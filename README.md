@@ -1,7 +1,7 @@
 ## What's this project?
 
 This is a project for demonstrating the VIPER(View-Interactor-Presenter-Entity-Routing), which is an approach to iOS application architecture. 
-Also, it is a variant of VIPER that integrated with my own understanding of the concept and some practical experience, which I think will make it more flexible and suitable for different kinds of projects.
+Also, it is a variant of VIPER that integrated with my own understanding of the concept and some practical experience, which I think will make it more flexible and suitable for different kinds of projects. In this Demo project, I added some common usecaes like table view, custom widget view, core data, view update when data changed etc, to demonstrate how these types of usecase to be implemented within VIPER architecture.
 
 The idea was inspired from [HERE](http://www.objc.io/issue-13/viper.html)
 
