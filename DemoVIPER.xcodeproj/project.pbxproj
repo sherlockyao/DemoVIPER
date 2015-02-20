@@ -27,6 +27,7 @@
 		166A99ED1A95D69500283F66 /* AskQuestionPanelPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99EC1A95D69500283F66 /* AskQuestionPanelPresenterTests.m */; };
 		166A99F01A95DC5E00283F66 /* QuestionRobotInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99EF1A95DC5E00283F66 /* QuestionRobotInteractorTests.m */; };
 		166A99F31A95DF5400283F66 /* QuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166A99F21A95DF5400283F66 /* QuestionTests.m */; };
+		16AE4B3E1A96CEE300D178D9 /* ViewsPresentersUML.png in Resources */ = {isa = PBXBuildFile; fileRef = 16AE4B3D1A96CEE300D178D9 /* ViewsPresentersUML.png */; };
 		16E421DD1A92DACC00621970 /* Question.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421DF1A92DACC00621970 /* Question.storyboard */; };
 		16E421E01A92DAD100621970 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E421E21A92DAD100621970 /* Setting.storyboard */; };
 		16E421E91A92DC0400621970 /* AssemblingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E421E41A92DC0400621970 /* AssemblingFactory.m */; };
@@ -128,6 +129,7 @@
 		166A99EC1A95D69500283F66 /* AskQuestionPanelPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskQuestionPanelPresenterTests.m; sourceTree = "<group>"; };
 		166A99EF1A95DC5E00283F66 /* QuestionRobotInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionRobotInteractorTests.m; sourceTree = "<group>"; };
 		166A99F21A95DF5400283F66 /* QuestionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTests.m; sourceTree = "<group>"; };
+		16AE4B3D1A96CEE300D178D9 /* ViewsPresentersUML.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ViewsPresentersUML.png; path = Documents/ViewsPresentersUML.png; sourceTree = "<group>"; };
 		16E421DE1A92DACC00621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Question.storyboard; sourceTree = "<group>"; };
 		16E421E11A92DAD100621970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
 		16E421E31A92DC0400621970 /* AssemblingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssemblingFactory.h; path = Classes/Routing/AssemblingFactory.h; sourceTree = "<group>"; };
@@ -719,6 +721,7 @@
 			isa = PBXGroup;
 			children = (
 				16EECE9E1A73884600CC90A4 /* RoutingSequence.png */,
+				16AE4B3D1A96CEE300D178D9 /* ViewsPresentersUML.png */,
 			);
 			name = Documents;
 			sourceTree = "<group>";
@@ -803,6 +806,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16AE4B3E1A96CEE300D178D9 /* ViewsPresentersUML.png in Resources */,
 				162F28D719FDDD780043C638 /* LaunchScreen.xib in Resources */,
 				16E421DD1A92DACC00621970 /* Question.storyboard in Resources */,
 				166A99D91A95986200283F66 /* ThemeChoiceCell.xib in Resources */,
